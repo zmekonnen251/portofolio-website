@@ -4,6 +4,9 @@
 
 > The project is to set up the portfolio website project and work on the mobile version skeleton of the website.
 
+<p align="center">
+  <img src="https://github.com/zmekonnen251/portofolio-website/blob/master/mobile-version-homepage.png">
+</p>
 
 ## Built With
 
