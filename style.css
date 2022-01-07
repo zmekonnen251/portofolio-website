@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap");
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -35,6 +36,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 120px;
 }
 
 .main-header {
@@ -87,4 +89,318 @@
   right: 0%;
   bottom: -8%;
   z-index: 1;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 24px;
+  row-gap: 64px;
+  margin-bottom: 120px;
+}
+
+.works_heading {
+  display: flex;
+  font-family: "Crete Round", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 10px 0;
+}
+
+.horizontal_line {
+  border-top: 1px solid #212121;
+  width: 80%;
+  margin: 0 24px;
+  padding-right: 24px;
+  margin-bottom: 80px;
+}
+
+.multi_post {
+  display: flex;
+  flex-direction: column;
+}
+
+.multi_post_img {
+  height: 237px;
+  width: 327px;
+  left: 24px;
+  top: 0;
+  border-radius: 0;
+  margin-bottom: 24px;
+}
+
+.multi_post_heading {
+  font-family: "Crete Round", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 12px;
+  color: #091e42;
+}
+
+.multi_postproject_description {
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  margin-bottom: 12px;
+}
+
+.used_technology_multi_post {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  padding-left: 0;
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.used_technology_multi_post li {
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  color: #000;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.project_description_multi_post {
+  margin-right: 16px;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  margin-bottom: 12px;
+}
+
+.see_project_multi_post {
+  width: 40%;
+  height: 48px;
+  background-color: #ff6b00;
+  border: 0;
+  color: #fff;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+}
+
+.work_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/Img_placeholder_2.png");
+}
+
+.project_heading {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 84px;
+  margin-bottom: 12px;
+  font-family: "Crete Round", "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+}
+
+.project_description {
+  margin-left: 16px;
+  margin-right: 16px;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.used_technology {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  margin-left: 16px;
+  padding-left: 0;
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.used_technology li {
+  border: 0 #3c3a39 solid;
+  padding: 10px 12px;
+  background: #ffffff3d;
+  color: #fff;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.see_project {
+  position: absolute;
+  width: 100%;
+  height: 48px;
+  left: 0;
+  bottom: -40px;
+  background-color: #ff6b00;
+  border: 0;
+  color: #fff;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px 113.5px;
+}
+
+.about_myself {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #1c1a19;
+  align-items: flex-start;
+}
+
+.about_me {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_myself_heading {
+  font-family: "Crete Round", "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  padding: 0 24px;
+  padding-top: 120px;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.about_me_description {
+  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 24px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.get_my_resume {
+  width: 40%;
+  background-color: #ff6b00;
+  border: 0;
+  color: #fff;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+  margin-left: 24px;
+}
+
+.horizontal_line_2 {
+  border-top: 1px solid #212121;
+  width: 80%;
+  margin: 0 24px;
+  padding-right: 24px;
+  margin-bottom: 136px;
+  margin-top: 209px;
+}
+
+.about_me_illustration {
+  position: absolute;
+  right: 0;
+  bottom: 150px;
+}
+
+.technologies,
+.technologies li {
+  list-style: none;
+  color: #fff;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+  width: 100%;
+  padding-left: 0;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 132px;
+}
+
+.languages,
+.skills,
+.frameworks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+  padding-left: 0;
+}
+
+.languages li:first-child,
+.skills li:first-child,
+.frameworks li:first-child {
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  padding-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.languages li:first-child img,
+.skills li:first-child img,
+.frameworks li:first-child img {
+  margin-right: 14px;
+}
+
+.frameworks li:first-child {
+  margin-right: 20px;
+}
+
+.skills li:first-child {
+  margin-right: 40px;
+}
+
+button:hover {
+  color: #f55800;
+  border: 1px #f55800 solid;
+  background-color: #fff;
 }
