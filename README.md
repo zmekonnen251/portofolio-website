@@ -13,6 +13,9 @@
 - HTML and CSS
 - GitHub and Figma
 
+## Live Demo
+
+[live demo link](https://zmekonnen251.github.io/portofolio-website/)
 
 
 ## Author
