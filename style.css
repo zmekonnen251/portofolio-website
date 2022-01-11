@@ -404,3 +404,19 @@ button:hover {
   border: 1px #f55800 solid;
   background-color: #fff;
 }
+
+.contact_section {
+  margin: 120px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_section h3 {
+  color: #172B4D;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
