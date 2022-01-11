@@ -412,11 +412,25 @@ button:hover {
 }
 
 .contact_section h3 {
-  color: #172B4D;
+  color: #172b4d;
   font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  margin-top: 72px;
+}
+
+.email,
+.name,
+.message {
+  border: none;
+  padding: 12px;
 }
