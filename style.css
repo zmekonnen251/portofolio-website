@@ -404,3 +404,80 @@ button:hover {
   border: 1px #f55800 solid;
   background-color: #fff;
 }
+
+.contact_section {
+  margin: 120px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_section h3 {
+  color: #172b4d;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 72px;
+  margin-bottom: 124px;
+}
+
+.email,
+.name,
+.message {
+  border: none;
+  padding: 12px;
+  width: 327px;
+}
+
+.contact_form hr {
+  color: #dbd8d7;
+  margin-bottom: 0;
+  width: 327px;
+}
+
+.message {
+  width: 327px;
+  height: 114px;
+  resize: none;
+}
+
+.submit_button {
+  width: 40%;
+  background-color: #ff6b00;
+  border: 0;
+  color: #fff;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+}
+
+.horizontal_line_3 {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-footer {
+  margin-top: 25px;
+  margin-bottom: 36px;
+  margin-left: 0;
+}
