@@ -424,7 +424,9 @@ button:hover {
 .contact_form {
   display: flex;
   flex-direction: column;
-  gap: 39px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
   margin-top: 72px;
 }
 
@@ -433,4 +435,16 @@ button:hover {
 .message {
   border: none;
   padding: 12px;
+  width: 327px;
+}
+
+.contact_form hr {
+  color: #DBD8D7;
+  margin-bottom: 0;
+  width: 327px;
+}
+
+.message {
+  width: 327px;
+  height: 114px;
 }
