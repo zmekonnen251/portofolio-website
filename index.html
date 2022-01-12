@@ -14,17 +14,31 @@
         <li class="menu-icon">
           <img src="img/menu.png" alt="menu icon" />
         </li>
+        <li class="main_menu">
+          <ul class="desktop_menu">
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="mailto:mekonnen.zelalem251@gmail.com"
+                ><img src="img/mail.png" alt="mail icon"
+              /></a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </header>
 
     <article class="headline">
-      <h1 class="main-header">Hey There. I'm Zelalem</h1>
-      <p class="profession">I’am a Software Developer</p>
-      <p class="description">
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don't hestiate to contact me.
-      </p>
+      <div class="headline-text">
+        <h1 class="main-header">Hey There. I'm Zelalem</h1>
+        <p class="profession">I'am a Software Developer</p>
+        <p class="description">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hestiate to contact me.
+        </p>
+      </div>
 
       <div class="social-media">
         <ul class="social-media-links">
@@ -51,12 +65,17 @@
         alt=""
         class="illustration-header-mobile"
       />
+      <img
+        src="img/Illustration-header-desktop.png"
+        alt="healine illustration"
+        class="illustration-header-desktop"
+      />
     </article>
 
-    <h2 class="works_heading">My Recent Works</h2>
-
-    <hr class="horizontal_line" />
-
+    <div class="work_heading_block" id="portfolio">
+      <h2 class="works_heading">My Recent Works</h2>
+      <div class="horizontal_line"></div>
+    </div>
     <div class="works">
       <section class="multi_post">
         <img
@@ -64,24 +83,26 @@
           src="img/img_placeholder.png"
           alt="place holder image"
         />
-        <h3 class="multi_post_heading">Multi-Post Stories</h3>
-        <p class="multi_postproject_description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
+        <div class="multipost_descrption">
+          <h3 class="multi_post_heading">Multi-Post Stories</h3>
+          <p class="multi_postproject_description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
 
-        <ul class="used_technology_multi_post">
-          <li>CSS</li>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
+          <ul class="used_technology_multi_post">
+            <li>CSS</li>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
 
-        <button class="see_project_multi_post button">See Project</button>
+          <button class="see_project_multi_post button">See Project</button>
+        </div>
       </section>
 
-      <div class="work_card">
+      <div class="work_card first_card">
         <h3 class="project_heading">Professional Art Printing Data</h3>
         <p class="project_description">
           A daily selection of privately personalized reads; no accounts or
@@ -97,7 +118,23 @@
         <button class="see_project button">See Project</button>
       </div>
 
-      <section class="work_card">
+      <section class="work_card card">
+        <h3 class="project_heading">Professional Art Printing Data</h3>
+        <p class="project_description">
+          A daily selection of privately personalized reads; no accounts or
+          sign-ups required. has been the industry's standard
+        </p>
+
+        <ul class="used_technology">
+          <li>html</li>
+          <li>bootstrap</li>
+          <li>Ruby</li>
+        </ul>
+
+        <button class="see_project">See Project</button>
+      </section>
+
+      <section class="work_card card">
         <h3 class="project_heading">Professional Art Printing Data</h3>
         <p class="project_description">
           A daily selection of privately personalized reads; no accounts or
@@ -113,7 +150,7 @@
         <button class="see_project button">See Project</button>
       </section>
 
-      <section class="work_card">
+      <section class="work_card card">
         <h3 class="project_heading">Professional Art Printing Data</h3>
         <p class="project_description">
           A daily selection of privately personalized reads; no accounts or
@@ -129,7 +166,7 @@
         <button class="see_project button">See Project</button>
       </section>
 
-      <section class="work_card">
+      <section class="work_card card">
         <h3 class="project_heading">Professional Art Printing Data</h3>
         <p class="project_description">
           A daily selection of privately personalized reads; no accounts or
@@ -145,23 +182,7 @@
         <button class="see_project button">See Project</button>
       </section>
 
-      <section class="work_card">
-        <h3 class="project_heading">Professional Art Printing Data</h3>
-        <p class="project_description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
-
-        <ul class="used_technology">
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-
-        <button class="see_project button">See Project</button>
-      </section>
-
-      <section class="work_card">
+      <section class="work_card card">
         <h3 class="project_heading">Professional Art Printing Data</h3>
         <p class="project_description">
           A daily selection of privately personalized reads; no accounts or
@@ -178,27 +199,33 @@
       </section>
     </div>
 
-    <section class="about_myself">
+    <section class="about_myself" id="about">
       <div class="about_me">
-        <h1 class="about_myself_heading">About me</h1>
-        <p class="about_me_description">
-          Hello I'm a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
+        <div class="aboutme_description">
+          <h1 class="about_myself_heading">About me</h1>
+          <p class="about_me_description">
+            Hello I'm a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
 
-        <button class="get_my_resume button">Get My Resume</button>
+          <button class="get_my_resume button">Get My Resume</button>
+        </div>
 
         <img
           src="img/illustration_about_me.png"
           alt="about me illustration"
-          class="about_me_illustration"
+          class="about_me_illustration_mobile"
         />
 
-        <hr class="horizontal_line_2" />
+        <img
+          src="img/illustration_about_me_desktop.png"
+          alt="about me illustration"
+          class="about_me_illustration_desktop"
+        />
       </div>
-
+      <div class="about_myself_line"></div>
       <ul class="technologies">
         <li>
           <ul class="languages">
@@ -234,7 +261,7 @@
       </ul>
     </section>
 
-    <section class="contact_section">
+    <section class="contact_section" id="contact">
       <h3>
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
@@ -246,20 +273,39 @@
         class="contact_form"
       >
         <input
-          class="name"
+          class="full_name"
           type="text"
-          placeholder="Full name"
+          placeholder="Full Name"
+          name="full_name"
           required
           maxlength="30"
         />
-        <hr class="horizontal_line" />
+
+        <input
+          class="first_name"
+          type="text"
+          placeholder="First Name"
+          name="first_name"
+          maxlength="30"
+          required
+        />
+
+        <input
+          class="last_name"
+          type="text"
+          placeholder="Last Name"
+          name="last_name"
+          maxlength="30"
+          required
+        />
+
         <input
           class="email"
           type="email"
           placeholder="Email address"
           required
         />
-        <hr class="horizontal_line" />
+
         <textarea
           class="message"
           name="message"
@@ -275,11 +321,9 @@
       </form>
     </section>
 
-    <hr class="horizontal_line horizontal_line_3" />
-
     <footer class="footer">
-      <div class="social-media social-media-footer">
-        <ul class="social-media-links">
+      <div class="social-media-footer">
+        <ul class="social-media-links social-media-footer">
           <li class="github-icon">
             <a href="https://github.com/zmekonnen251"
               ><img src="img/github-black.png" alt="github icon"
