@@ -14,14 +14,6 @@
   padding: 10px 24px;
 }
 
-@media (min-width: 920px) {
-  .header {
-    height: 72px;
-    width: 100%;
-    padding: 26px 154px;
-  }
-}
-
 .nav {
   list-style: none;
   display: flex;
@@ -48,27 +40,10 @@
   margin-bottom: 120px;
 }
 
-@media (min-width: 920px) {
-  .headline {
-    padding-top: 192px;
-    flex-direction: row-reverse;
-    padding-bottom: 256px;
-    justify-content: flex-end;
-  }
-}
-
 .headline-text {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-@media (min-width: 920px) {
-  .headline-text {
-    width: 566px;
-    gap: 24px;
-    margin-left: 90px;
-  }
 }
 
 .main-header {
@@ -80,13 +55,6 @@
   letter-spacing: 0.37px;
   color: #ff6b00;
   padding: 0 24px;
-}
-
-@media (min-width: 920px) {
-  .main-header {
-    font-size: 72px;
-    line-height: 81px;
-  }
 }
 
 .profession {
@@ -109,27 +77,11 @@
   color: #fff;
 }
 
-@media (min-width: 920px) {
-  .description {
-    font-size: 20px;
-    line-height: 32px;
-  }
-}
-
 .social-media {
   width: 200px;
   height: 40px;
   margin-left: 24px;
   margin-bottom: 130px;
-}
-
-/* social media links for desktop version */
-
-@media (min-width: 920px) {
-  .social-media {
-    width: 18px;
-    align-self: center;
-  }
 }
 
 .social-media-links {
@@ -139,28 +91,12 @@
   padding: 9px 9px;
 }
 
-@media (min-width: 920px) {
-  .social-media-links {
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 40px;
-  }
-}
-
 .illustration-header-mobile {
   position: absolute;
   right: 0%;
   bottom: -8%;
   z-index: 1;
 }
-
-@media (max-width: 920px) {
-  .illustration-header-desktop {
-    display: none;
-  }
-}
-
-/* headline styling for desktop */
 
 .works {
   display: grid;
@@ -405,20 +341,6 @@
   right: 0;
 }
 
-@media (max-width: 920px) {
-  .about_me_illustration_desktop {
-    display: none;
-  }
-
-  .desktop_menu {
-    display: none;
-  }
-
-  .main_menu {
-    display: none;
-  }
-}
-
 .technologies,
 .technologies li {
   list-style: none;
@@ -530,13 +452,6 @@ button:hover {
   line-height: 24px;
 }
 
-@media (max-width: 920px) {
-  .last_name,
-  .first_name {
-    display: none;
-  }
-}
-
 .contact_form hr {
   color: #dbd8d7;
   margin-bottom: 0;
@@ -584,7 +499,50 @@ input::placeholder {
   margin-top: 20px;
 }
 
+/* Hiddent components for mobile verstion */
+@media (max-width: 920px) {
+  /* header illustration of the desktop version is hidden for mobile version */
+  .illustration-header-desktop {
+    display: none;
+  }
+
+  /* about me illustration of desktop version is hidden for mobile version */
+  .about_me_illustration_desktop {
+    display: none;
+  }
+
+  /* The menu for desktop is hidden for mobile version */
+  .desktop_menu {
+    display: none;
+  }
+
+  .main_menu {
+    display: none;
+  }
+
+  /* first and last name input field of contact form are hidden for mobile version */
+  .last_name,
+  .first_name {
+    display: none;
+  }
+}
+
+/* Styling for desktop vesrion */
+
 @media (min-width: 920px) {
+  .main-header {
+    font-size: 72px;
+    line-height: 81px;
+  }
+
+  .header {
+    height: 72px;
+    width: 100%;
+    padding: 26px 154px;
+    position: fixed;
+    z-index: 1;
+  }
+
   .menu-icon {
     display: none;
   }
@@ -621,17 +579,16 @@ input::placeholder {
 
   .headline {
     position: relative;
+    padding-top: 192px;
+    flex-direction: row-reverse;
+    padding-bottom: 256px;
+    justify-content: flex-end;
   }
 
   .illustration-header-desktop {
     position: absolute;
     right: 10px;
     bottom: 0;
-  }
-
-  .header {
-    position: fixed;
-    z-index: 1;
   }
 
   .work_heading_block {
@@ -642,6 +599,28 @@ input::placeholder {
     justify-content: flex-start;
     margin: 0 156px;
     margin-bottom: 114px;
+  }
+
+  .social-media-links {
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .headline-text {
+    width: 566px;
+    gap: 24px;
+    margin-left: 90px;
+  }
+
+  .social-media {
+    width: 18px;
+    align-self: center;
   }
 
   .horizontal_line {
