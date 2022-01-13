@@ -491,10 +491,10 @@ button:hover {
 }
 
 .contact_section {
-  margin: 120px 24px 0 24px;
+  padding: 120px 24px 0 24px;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px #dfe1e6 solid;
+  border-bottom: 2px #dfe1e6 solid;
 }
 
 .contact_section h3 {
