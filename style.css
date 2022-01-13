@@ -489,6 +489,7 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+
 .contact_section {
   margin: 120px 24px 0 24px;
   display: flex;
@@ -823,9 +824,6 @@ input::placeholder {
     grid-column: 1/-1;
     width: 87.5%;
     padding: 16px;
-  }
-
-  .footer {
   }
 
   .social-media-footer {
