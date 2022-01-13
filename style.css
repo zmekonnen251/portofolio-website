@@ -194,7 +194,7 @@
 }
 
 .see_project_multi_post {
-  width: 40%;
+  width: 80%;
   height: 48px;
   background-color: #ff6b00;
   border: 0;
@@ -549,6 +549,7 @@ input::placeholder {
     position: fixed;
     z-index: 1;
   }
+
   .header .nav {
     height: 100%;
   }
@@ -684,12 +685,6 @@ input::placeholder {
   }
 
   .card .used_technology:hover {
-    display: none;
-  }
-
-  .card .see .first_card .project_heading,
-  .first_card .project_description,
-  .first_card .used_technology {
     display: none;
   }
 
