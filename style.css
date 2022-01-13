@@ -483,10 +483,17 @@ button:hover {
   background-color: #fff;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .contact_section {
   margin: 120px 24px 0 24px;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px #dfe1e6 solid;
 }
 
 .contact_section h3 {
@@ -569,12 +576,6 @@ input::placeholder {
   font-size: 17px;
   line-height: 24px;
   padding: 12px;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  border-top: 1px #dfe1e6 solid;
 }
 
 .social-media-footer {
@@ -825,7 +826,6 @@ input::placeholder {
   }
 
   .footer {
-    flex-direction: row;
   }
 
   .social-media-footer {
