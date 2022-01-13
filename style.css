@@ -819,6 +819,17 @@ input::placeholder {
     padding: 16px;
   }
 
+  input::placeholder, textarea::placeholder {
+    font-size: 15px;
+    transition-property: font-size;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+  }
+
+  input:focus::placeholder, textarea:focus::placeholder {
+    font-size: 20px;
+  }
+
   .social-media-footer {
     flex-direction: row;
   }
