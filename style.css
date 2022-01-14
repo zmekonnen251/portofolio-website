@@ -819,7 +819,7 @@ input::placeholder {
   .email {
     border-bottom: 1px solid #000;
     padding: 16px;
-    width: 150%;
+    width: 130%;
   }
 
   .submit_button {
@@ -830,7 +830,7 @@ input::placeholder {
     grid-row: 3/4;
     grid-column: 1/-1;
     padding: 16px;
-    width: 150%;
+    width: 130%;
   }
 
   .social-media-footer {
