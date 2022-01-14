@@ -667,13 +667,13 @@ input::placeholder {
     opacity: 0;
   }
 
-  .card .see_project:hover {
-    display: block;
+  .see_project:hover {
     opacity: 1;
   }
 
-  .card .see_project {
-    opacity: 0;
+  .card .see_project:hover {
+    display: block;
+    opacity: 1;
   }
 
   .hover-effect {
@@ -682,10 +682,6 @@ input::placeholder {
 
   .hover-effect:hover {
     opacity: 0;
-  }
-
-  .see_project:hover {
-    opacity: 1;
   }
 
   .hover-effect:hover + .see_project {
