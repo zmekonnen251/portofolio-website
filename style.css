@@ -523,6 +523,7 @@ input::placeholder {
   body {
     overflow-x: hidden;
   }
+
   .main-header {
     font-size: 72px;
     line-height: 81px;
@@ -639,6 +640,7 @@ input::placeholder {
   }
 
   .card {
+    justify-content: flex-end;
     background-size: 100% 100%;
   }
 
@@ -651,32 +653,24 @@ input::placeholder {
     margin-left: 16px;
   }
 
-  .card {
-    justify-content: flex-end;
-  }
-
   .card .see_project {
     opacity: 0;
-  }
-
-  .hover-effect:hover {
-    opacity: 0;
-  }
-
-  .hover-effect:hover + .see_project {
-    display: block;
-    opacity: 1;
   }
 
   .hover-effect {
     padding-top: 100px;
   }
 
-  .see_project:hover + .project_heading {
-    visibility: hidden;
+  .hover-effect:hover {
+    opacity: 0;
   }
 
   .see_project:hover {
+    opacity: 1;
+  }
+
+  .hover-effect:hover + .see_project {
+    display: block;
     opacity: 1;
   }
 
