@@ -59,7 +59,7 @@
 
 .profession {
   color: #fff5e1;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -68,7 +68,7 @@
 }
 
 .description {
-  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -144,7 +144,7 @@
 }
 
 .multi_postproject_description {
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -166,7 +166,7 @@
   border: 1px solid #8993a4;
   padding: 10px 12px;
   color: #000;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -175,7 +175,7 @@
 
 .project_description_multi_post {
   margin-right: 16px;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -190,7 +190,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -221,7 +221,7 @@
 .project_description {
   margin-left: 16px;
   margin-right: 16px;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -245,7 +245,7 @@
   padding: 10px 12px;
   background: #ffffff3d;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -257,7 +257,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -295,7 +295,7 @@
 }
 
 .about_me_description {
-  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -310,7 +310,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -347,7 +347,7 @@
   gap: 44px;
   width: 100%;
   padding-left: 0;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -368,7 +368,7 @@
 .languages li:first-child,
 .skills li:first-child,
 .frameworks li:first-child {
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -413,7 +413,7 @@ button:hover {
 
 .contact_section h3 {
   color: #172b4d;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -461,13 +461,13 @@ button:hover {
 
 input::placeholder {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 24px;
 }
 
 .message::placeholder {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 24px;
 }
 
@@ -476,7 +476,7 @@ input::placeholder {
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -520,6 +520,9 @@ input::placeholder {
 /* Styling for desktop vesrion */
 
 @media (min-width: 995px) {
+  body {
+    overflow-x: hidden;
+  }
   .main-header {
     font-size: 72px;
     line-height: 81px;
@@ -620,6 +623,7 @@ input::placeholder {
   }
 
   .works {
+    box-sizing: border-box;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 24px;
@@ -632,10 +636,6 @@ input::placeholder {
   .work_card {
     height: 435px;
     width: 100%;
-  }
-
-  .first_card {
-    justify-content: flex-end;
   }
 
   .card {
@@ -651,7 +651,6 @@ input::placeholder {
     margin-left: 16px;
   }
 
-  .first_card,
   .card {
     justify-content: flex-end;
   }
@@ -660,13 +659,25 @@ input::placeholder {
     opacity: 0;
   }
 
-  .card .see_project:hover {
+  .hover-effect:hover {
+    opacity: 0;
+  }
+
+  .hover-effect:hover + .see_project {
     display: block;
     opacity: 1;
   }
 
-  .card .used_technology:hover {
-    display: none;
+  .hover-effect {
+    padding-top: 100px;
+  }
+
+  .see_project:hover + .project_heading {
+    visibility: hidden;
+  }
+
+  .see_project:hover {
+    opacity: 1;
   }
 
   .multi_post {
@@ -693,7 +704,7 @@ input::placeholder {
   }
 
   .multi_post_img_desktop {
-    width: 100%;
+    width: 60%;
     height: auto;
     left: 24px;
     top: 0;
@@ -716,16 +727,20 @@ input::placeholder {
   .about_myself {
     padding: 0 143px;
     margin-bottom: 100px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .about_me {
+    box-sizing: border-box;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 100px;
     padding-bottom: 0;
     margin-bottom: 40px;
-    gap: 290px;
+    width: 100%;
   }
 
   .aboutme_description {
@@ -738,13 +753,15 @@ input::placeholder {
   }
 
   .about_myself_heading {
-    font-size: 80px;
-    line-height: 81px;
+    font-size: 82px;
+    line-height: 86px;
+    letter-spacing: 2.5px;
   }
 
   .about_me_description {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.4px;
   }
 
   .get_my_resume {
@@ -753,6 +770,12 @@ input::placeholder {
 
   .about_me_illustration_mobile {
     display: none;
+  }
+
+  .about_me_illustration_desktop {
+    position: absolute;
+    right: -20%;
+    bottom: 0;
   }
 
   .about_myself_line {
@@ -802,18 +825,18 @@ input::placeholder {
   .email {
     border-bottom: 1px solid #000;
     padding: 16px;
-    width: 70%;
+    width: 110%;
   }
 
   .submit_button {
-    width: 25%;
+    width: 42%;
   }
 
   .message {
     grid-row: 3/4;
     grid-column: 1/-1;
     padding: 16px;
-    width: 70%;
+    width: 110%;
   }
 
   .social-media-footer {
