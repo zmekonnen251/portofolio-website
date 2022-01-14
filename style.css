@@ -6,11 +6,12 @@
   box-sizing: border-box;
 }
 
+/* Headline styling  */
+
 .header {
   background-color: #3c3a39;
   color: #fff;
   padding: 10px 24px;
-  box-sizing: border-box;
 }
 
 .nav {
@@ -22,7 +23,7 @@
 }
 
 .logo {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -39,6 +40,12 @@
   margin-bottom: 120px;
 }
 
+.headline-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .main-header {
   font-family: "Crete Round", "Times New Roman", Times, serif;
   font-style: normal;
@@ -52,7 +59,7 @@
 
 .profession {
   color: #fff5e1;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -61,7 +68,7 @@
 }
 
 .description {
-  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -100,25 +107,16 @@
 }
 
 .works_heading {
-  display: flex;
   font-family: "Crete Round", "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 37px;
   line-height: 52px;
-  align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 80px;
   margin-left: 24px;
   margin-right: 24px;
-  padding: 10px 0;
-}
-
-.horizontal_line {
-  border-top: 1px solid #212121;
-  width: 80%;
-  margin: 0 24px;
-  padding-right: 24px;
-  margin-bottom: 80px;
+  border-bottom: 1px solid #212121;
+  padding-bottom: 50px;
 }
 
 .multi_post {
@@ -126,7 +124,7 @@
   flex-direction: column;
 }
 
-.multi_post_img {
+.multi_post_img_mobile {
   height: 237px;
   width: 327px;
   left: 24px;
@@ -146,7 +144,7 @@
 }
 
 .multi_postproject_description {
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -168,7 +166,7 @@
   border: 1px solid #8993a4;
   padding: 10px 12px;
   color: #000;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -177,7 +175,7 @@
 
 .project_description_multi_post {
   margin-right: 16px;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -192,7 +190,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -201,7 +199,6 @@
 }
 
 .work_card {
-  position: relative;
   display: flex;
   flex-direction: column;
   background-image: url("img/Img_placeholder_2.png");
@@ -224,7 +221,7 @@
 .project_description {
   margin-left: 16px;
   margin-right: 16px;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -248,7 +245,7 @@
   padding: 10px 12px;
   background: #ffffff3d;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -256,15 +253,11 @@
 }
 
 .see_project {
-  position: absolute;
   width: 100%;
-  height: 48px;
-  left: 0;
-  bottom: -40px;
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -302,7 +295,7 @@
 }
 
 .about_me_description {
-  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -313,11 +306,11 @@
 }
 
 .get_my_resume {
-  width: 40%;
+  width: 50%;
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -326,19 +319,18 @@
   margin-left: 24px;
 }
 
-.horizontal_line_2 {
-  border-top: 1px solid #212121;
+.about_myself_line {
+  border-bottom: 1px solid #fff;
   width: 80%;
-  margin: 0 24px;
-  padding-right: 24px;
+  margin: 0 30px;
   margin-bottom: 136px;
   margin-top: 209px;
 }
 
-.about_me_illustration {
+.about_me_illustration_mobile {
   position: absolute;
+  bottom: -180px;
   right: 0;
-  bottom: 150px;
 }
 
 .technologies,
@@ -355,7 +347,7 @@
   gap: 44px;
   width: 100%;
   padding-left: 0;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -376,7 +368,7 @@
 .languages li:first-child,
 .skills li:first-child,
 .frameworks li:first-child {
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -402,18 +394,26 @@
 button:hover {
   color: #f55800;
   border: 1px #f55800 solid;
-  background-color: #fff;
+  background-color: #fff5e1;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact_section {
-  margin: 120px 24px 0 24px;
+  padding: 120px 24px 0 24px;
   display: flex;
   flex-direction: column;
+  border-bottom: 2px #dfe1e6 solid;
 }
 
 .contact_section h3 {
   color: #172b4d;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -432,11 +432,14 @@ button:hover {
 }
 
 .email,
-.name,
-.message {
+.full_name {
   border: none;
   padding: 12px;
   width: 327px;
+  border-bottom: 1px solid #000;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .contact_form hr {
@@ -449,14 +452,31 @@ button:hover {
   width: 327px;
   height: 114px;
   resize: none;
+  padding: 12px;
+  border: none;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+input::placeholder {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.message::placeholder {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .submit_button {
-  width: 40%;
+  width: 35%;
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -464,20 +484,356 @@ button:hover {
   padding: 12px;
 }
 
-.horizontal_line_3 {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-}
-
 .social-media-footer {
-  margin-top: 25px;
-  margin-bottom: 36px;
-  margin-left: 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Hiddent components for mobile verstion */
+@media (max-width: 995px) {
+  /* header illustration of the desktop version is hidden for mobile version */
+  .illustration-header-desktop {
+    display: none;
+  }
+
+  /* multipost place holder image for desktop version is hidden for mobile version */
+
+  .multi_post_img_desktop {
+    display: none;
+  }
+
+  /* about me illustration of desktop version is hidden for mobile version */
+  .about_me_illustration_desktop {
+    display: none;
+  }
+
+  /* The menu for desktop is hidden for mobile version */
+  .desktop_menu {
+    display: none;
+  }
+
+  .main_menu {
+    display: none;
+  }
+}
+
+/* Styling for desktop vesrion */
+
+@media (min-width: 995px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-header {
+    font-size: 72px;
+    line-height: 81px;
+  }
+
+  .header {
+    height: 72px;
+    width: 100%;
+    padding: 26px 154px;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .desktop_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 32px;
+  }
+
+  .desktop_menu li {
+    font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav .logo {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .illustration-header-mobile {
+    display: none;
+  }
+
+  .headline {
+    position: relative;
+    padding-top: 192px;
+    flex-direction: row-reverse;
+    padding-bottom: 256px;
+    justify-content: flex-end;
+  }
+
+  .illustration-header-desktop {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .works_heading {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    margin-bottom: 114px;
+    font-size: 45px;
+    line-height: 52px;
+    border-bottom: none;
+  }
+
+  .horizontal_line {
+    border-bottom: 1px solid #212121;
+    width: 65%;
+    margin-left: 20px;
+  }
+
+  .social-media-links {
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .headline-text {
+    width: 566px;
+    gap: 24px;
+    margin-left: 90px;
+  }
+
+  .social-media {
+    width: 18px;
+    align-self: center;
+  }
+
+  .works {
+    box-sizing: border-box;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 37px;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 130px;
+  }
+
+  .work_card {
+    height: 435px;
+    width: 100%;
+  }
+
+  .card {
+    justify-content: flex-end;
+    background-size: 100% 100%;
+  }
+
+  .card .project_heading {
+    padding-top: 178px;
+    margin-top: 0;
+  }
+
+  .card .used_technology {
+    margin-left: 16px;
+  }
+
+  .card .see_project {
+    opacity: 0;
+  }
+
+  .hover-effect {
+    padding-top: 100px;
+  }
+
+  .hover-effect:hover {
+    opacity: 0;
+  }
+
+  .see_project:hover {
+    opacity: 1;
+  }
+
+  .hover-effect:hover + .see_project {
+    display: block;
+    opacity: 1;
+  }
+
+  .multi_post {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .see_project_multi_post {
+    width: 30%;
+  }
+
+  .multipost_descrption {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    /* width: 30%; */
+  }
+
+  .multi_post_img_mobile {
+    display: none;
+  }
+
+  .multi_post_img_desktop {
+    width: 60%;
+    height: auto;
+    left: 24px;
+    top: 0;
+    border-radius: 0;
+    margin-bottom: 24px;
+    margin-right: 24px;
+  }
+
+  .multi_postproject_description {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .multi_post_heading {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .about_myself {
+    padding: 0 143px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .about_me {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .aboutme_description {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+    width: 616px;
+    margin-right: 50px;
+  }
+
+  .about_myself_heading {
+    font-size: 82px;
+    line-height: 86px;
+    letter-spacing: 2.5px;
+  }
+
+  .about_me_description {
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.4px;
+  }
+
+  .get_my_resume {
+    width: 30%;
+  }
+
+  .about_me_illustration_mobile {
+    display: none;
+  }
+
+  .about_me_illustration_desktop {
+    position: absolute;
+    right: -20%;
+    bottom: 0;
+  }
+
+  .about_myself_line {
+    border-bottom: 1px solid #fff;
+    padding: 0;
+    margin-bottom: 150px;
+    width: 100%;
+  }
+
+  .technologies {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 15px;
+  }
+
+  .technologies ul {
+    align-items: flex-start;
+  }
+
+  .contact_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    padding: 0 125px;
+    padding-bottom: 154px;
+  }
+
+  .contact_section h3 {
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+  }
+
+  .contact_form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    margin-right: 140px;
+    padding: 0;
+  }
+
+  .full_name,
+  .email {
+    border-bottom: 1px solid #000;
+    padding: 16px;
+    width: 130%;
+  }
+
+  .submit_button {
+    width: 42%;
+  }
+
+  .message {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    padding: 16px;
+    width: 130%;
+  }
+
+  .social-media-footer {
+    flex-direction: row;
+  }
 }

@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Portfolio</title>
   </head>
   <body>
@@ -14,17 +21,31 @@
         <li class="menu-icon">
           <img src="img/menu.png" alt="menu icon" />
         </li>
+        <li class="main_menu">
+          <ul class="desktop_menu">
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="mailto:mekonnen.zelalem251@gmail.com"
+                ><img src="img/mail.png" alt="mail icon"
+              /></a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </header>
 
     <article class="headline">
-      <h1 class="main-header">Hey There. I'm Zelalem</h1>
-      <p class="profession">I’am a Software Developer</p>
-      <p class="description">
-        I can help you build a product , feature or website Look through some of
-        my work and experience! If you like what you see and have a project you
-        need coded, don't hestiate to contact me.
-      </p>
+      <div class="headline-text">
+        <h1 class="main-header">Hey There. I'm Zelalem</h1>
+        <p class="profession">I'am a Software Developer</p>
+        <p class="description">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hestiate to contact me.
+        </p>
+      </div>
 
       <div class="social-media">
         <ul class="social-media-links">
@@ -51,154 +72,186 @@
         alt=""
         class="illustration-header-mobile"
       />
+      <img
+        src="img/Illustration-header-desktop.png"
+        alt="healine illustration"
+        class="illustration-header-desktop"
+      />
     </article>
 
-    <h2 class="works_heading">My Recent Works</h2>
-
-    <hr class="horizontal_line" />
+    <h2 class="works_heading" id="portfolio">
+      My Recent Works
+      <span class="horizontal_line"></span>
+    </h2>
 
     <div class="works">
       <section class="multi_post">
         <img
-          class="multi_post_img"
+          class="multi_post_img_mobile"
           src="img/img_placeholder.png"
           alt="place holder image"
         />
-        <h3 class="multi_post_heading">Multi-Post Stories</h3>
-        <p class="multi_postproject_description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
 
-        <ul class="used_technology_multi_post">
-          <li>CSS</li>
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
+        <img
+          class="multi_post_img_desktop"
+          src="img/multipost_desktop.png"
+          alt="place holder image"
+        />
+        <div class="multipost_descrption">
+          <h3 class="multi_post_heading">Multi-Post Stories</h3>
+          <p class="multi_postproject_description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
 
-        <button class="see_project_multi_post button">See Project</button>
+          <ul class="used_technology_multi_post">
+            <li>CSS</li>
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+
+          <button class="see_project_multi_post button">See Project</button>
+        </div>
       </section>
 
-      <div class="work_card">
-        <h3 class="project_heading">Professional Art Printing Data</h3>
-        <p class="project_description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
+      <section class="work_card card">
+        <div class="hover-effect">
+          <h3 class="project_heading">Professional Art Printing Data</h3>
+          <p class="project_description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
 
-        <ul class="used_technology">
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
+          <ul class="used_technology">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+        </div>
 
-        <button class="see_project button">See Project</button>
-      </div>
-
-      <section class="work_card">
-        <h3 class="project_heading">Professional Art Printing Data</h3>
-        <p class="project_description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
-
-        <ul class="used_technology">
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
-
-        <button class="see_project button">See Project</button>
+        <button class="see_project">See Project</button>
       </section>
 
-      <section class="work_card">
-        <h3 class="project_heading">Professional Art Printing Data</h3>
-        <p class="project_description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
+      <section class="work_card card">
+        <div class="hover-effect">
+          <h3 class="project_heading">Professional Art Printing Data</h3>
+          <p class="project_description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
 
-        <ul class="used_technology">
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
+          <ul class="used_technology">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+        </div>
 
-        <button class="see_project button">See Project</button>
+        <button class="see_project">See Project</button>
       </section>
 
-      <section class="work_card">
-        <h3 class="project_heading">Professional Art Printing Data</h3>
-        <p class="project_description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
+      <section class="work_card card">
+        <div class="hover-effect">
+          <h3 class="project_heading">Professional Art Printing Data</h3>
+          <p class="project_description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
 
-        <ul class="used_technology">
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
+          <ul class="used_technology">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+        </div>
 
-        <button class="see_project button">See Project</button>
+        <button class="see_project">See Project</button>
       </section>
 
-      <section class="work_card">
-        <h3 class="project_heading">Professional Art Printing Data</h3>
-        <p class="project_description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
+      <section class="work_card card">
+        <div class="hover-effect">
+          <h3 class="project_heading">Professional Art Printing Data</h3>
+          <p class="project_description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
 
-        <ul class="used_technology">
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
+          <ul class="used_technology">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+        </div>
 
-        <button class="see_project button">See Project</button>
+        <button class="see_project">See Project</button>
       </section>
 
-      <section class="work_card">
-        <h3 class="project_heading">Professional Art Printing Data</h3>
-        <p class="project_description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard
-        </p>
+      <section class="work_card card">
+        <div class="hover-effect">
+          <h3 class="project_heading">Professional Art Printing Data</h3>
+          <p class="project_description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
 
-        <ul class="used_technology">
-          <li>html</li>
-          <li>bootstrap</li>
-          <li>Ruby</li>
-        </ul>
+          <ul class="used_technology">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+        </div>
 
-        <button class="see_project button">See Project</button>
+        <button class="see_project">See Project</button>
+      </section>
+
+      <section class="work_card card">
+        <div class="hover-effect">
+          <h3 class="project_heading">Professional Art Printing Data</h3>
+          <p class="project_description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard
+          </p>
+
+          <ul class="used_technology">
+            <li>html</li>
+            <li>bootstrap</li>
+            <li>Ruby</li>
+          </ul>
+        </div>
+
+        <button class="see_project">See Project</button>
       </section>
     </div>
 
-    <section class="about_myself">
+    <section class="about_myself" id="about">
       <div class="about_me">
-        <h1 class="about_myself_heading">About me</h1>
-        <p class="about_me_description">
-          Hello I'm a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
+        <div class="aboutme_description">
+          <h1 class="about_myself_heading">About me</h1>
+          <p class="about_me_description">
+            Hello I'm a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
 
-        <button class="get_my_resume button">Get My Resume</button>
+          <button class="get_my_resume button">Get My Resume</button>
+        </div>
 
         <img
           src="img/illustration_about_me.png"
           alt="about me illustration"
-          class="about_me_illustration"
+          class="about_me_illustration_mobile"
         />
 
-        <hr class="horizontal_line_2" />
+        <img
+          src="img/illustration_about_me_desktop.png"
+          alt="about me illustration"
+          class="about_me_illustration_desktop"
+        />
       </div>
-
+      <div class="about_myself_line"></div>
       <ul class="technologies">
         <li>
           <ul class="languages">
@@ -234,52 +287,50 @@
       </ul>
     </section>
 
-    <section class="contact_section">
-      <h3>
-        I'm always interested in hearing about new projects, so if you'd like to
-        chat please get in touch.
-      </h3>
-
-      <form
-        action="https://formspree.io/f/xgedowvw"
-        method="POST"
-        class="contact_form"
-      >
-        <input
-          class="name"
-          type="text"
-          placeholder="Full name"
-          required
-          maxlength="30"
-        />
-        <hr class="horizontal_line" />
-        <input
-          class="email"
-          type="email"
-          placeholder="Email address"
-          required
-        />
-        <hr class="horizontal_line" />
-        <textarea
-          class="message"
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          maxlength="500"
-          placeholder="Enter text here"
-          required
-        ></textarea>
-
-        <button class="submit_button" type="submit">Get in touch</button>
-      </form>
-    </section>
-
-    <hr class="horizontal_line horizontal_line_3" />
-
     <footer class="footer">
-      <div class="social-media social-media-footer">
-        <ul class="social-media-links">
+      <section class="contact_section" id="contact">
+        <h3>
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h3>
+
+        <form
+          action="https://formspree.io/f/xgedowvw"
+          method="POST"
+          class="contact_form"
+        >
+          <input
+            class="full_name"
+            type="text"
+            placeholder="Full Name"
+            name="full_name"
+            required
+            maxlength="30"
+          />
+
+          <input
+            class="email"
+            type="email"
+            placeholder="Email address"
+            required
+          />
+
+          <textarea
+            class="message"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Enter text here"
+            required
+          ></textarea>
+
+          <button class="submit_button" type="submit">Get in touch</button>
+        </form>
+      </section>
+      <div class="social-media-footer">
+        <ul class="social-media-links social-media-footer">
           <li class="github-icon">
             <a href="https://github.com/zmekonnen251"
               ><img src="img/github-black.png" alt="github icon"
