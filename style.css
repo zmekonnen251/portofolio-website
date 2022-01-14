@@ -104,6 +104,7 @@
   margin: 0 24px;
   row-gap: 64px;
   margin-bottom: 120px;
+  box-sizing: border-box;
 }
 
 .works_heading {
@@ -185,7 +186,7 @@
 }
 
 .see_project_multi_post {
-  width: 40%;
+  width: 80%;
   height: 48px;
   background-color: #ff6b00;
   border: 0;
@@ -202,6 +203,12 @@
   display: flex;
   flex-direction: column;
   background-image: url("img/Img_placeholder_2.png");
+  background-size: 100% 100%;
+  position: relative;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transition-duration: 1.5s;
+  transition-delay: 0.25s;
 }
 
 .project_heading {
@@ -532,9 +539,13 @@ input::placeholder {
   .header {
     height: 72px;
     width: 100%;
-    padding: 26px 154px;
+    padding: 0 154px;
     position: fixed;
     z-index: 1;
+  }
+
+  .header .nav {
+    height: 100%;
   }
 
   .menu-icon {
@@ -555,6 +566,7 @@ input::placeholder {
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
+    height: 100%;
   }
 
   a {
@@ -639,22 +651,29 @@ input::placeholder {
     width: 100%;
   }
 
+  /* work card animation */
+  .work_card:hover {
+    left: 5px;
+    bottom: 5px;
+  }
+
+  .first_card,
   .card {
     justify-content: flex-end;
     background-size: 100% 100%;
   }
 
-  .card .project_heading {
-    padding-top: 178px;
-    margin-top: 0;
-  }
-
-  .card .used_technology {
-    margin-left: 16px;
-  }
-
   .card .see_project {
     opacity: 0;
+  }
+
+  .see_project:hover {
+    opacity: 1;
+  }
+
+  .card .see_project:hover {
+    display: block;
+    opacity: 1;
   }
 
   .hover-effect {
@@ -663,10 +682,6 @@ input::placeholder {
 
   .hover-effect:hover {
     opacity: 0;
-  }
-
-  .see_project:hover {
-    opacity: 1;
   }
 
   .hover-effect:hover + .see_project {
@@ -831,6 +846,19 @@ input::placeholder {
     grid-column: 1/-1;
     padding: 16px;
     width: 130%;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 15px;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+
+  input:focus::placeholder,
+  textarea:focus::placeholder {
+    font-size: 20px;
   }
 
   .social-media-footer {
