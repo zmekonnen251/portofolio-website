@@ -59,7 +59,7 @@
 
 .profession {
   color: #fff5e1;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -68,7 +68,7 @@
 }
 
 .description {
-  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -108,24 +108,16 @@
 }
 
 .works_heading {
-  display: flex;
   font-family: "Crete Round", "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 37px;
   line-height: 52px;
-  align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 80px;
   margin-left: 24px;
   margin-right: 24px;
-  padding: 10px 0;
-}
-
-.horizontal_line {
-  width: 80%;
-  margin: 0 24px;
-  margin-bottom: 80px;
   border-bottom: 1px solid #212121;
+  padding-bottom: 50px;
 }
 
 .multi_post {
@@ -133,7 +125,7 @@
   flex-direction: column;
 }
 
-.multi_post_img {
+.multi_post_img_mobile {
   height: 237px;
   width: 327px;
   left: 24px;
@@ -153,7 +145,7 @@
 }
 
 .multi_postproject_description {
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -175,7 +167,7 @@
   border: 1px solid #8993a4;
   padding: 10px 12px;
   color: #000;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -184,7 +176,7 @@
 
 .project_description_multi_post {
   margin-right: 16px;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -199,7 +191,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -236,7 +228,7 @@
 .project_description {
   margin-left: 16px;
   margin-right: 16px;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -260,7 +252,7 @@
   padding: 10px 12px;
   background: #ffffff3d;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -272,7 +264,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -310,7 +302,7 @@
 }
 
 .about_me_description {
-  font-family: Poppins, Helvetica, Arial, sans-serif;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -325,7 +317,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -362,7 +354,7 @@
   gap: 44px;
   width: 100%;
   padding-left: 0;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -383,7 +375,7 @@
 .languages li:first-child,
 .skills li:first-child,
 .frameworks li:first-child {
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -409,7 +401,7 @@
 button:hover {
   color: #f55800;
   border: 1px #f55800 solid;
-  background-color: #fff;
+  background-color: #fff5e1;
 }
 
 .footer {
@@ -428,7 +420,7 @@ button:hover {
 
 .contact_section h3 {
   color: #172b4d;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -447,9 +439,7 @@ button:hover {
 }
 
 .email,
-.full_name,
-.first_name,
-.last_name {
+.full_name {
   border: none;
   padding: 12px;
   width: 327px;
@@ -489,11 +479,11 @@ input::placeholder {
 }
 
 .submit_button {
-  width: 40%;
+  width: 35%;
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -513,6 +503,12 @@ input::placeholder {
     display: none;
   }
 
+  /* multipost place holder image for desktop version is hidden for mobile version */
+
+  .multi_post_img_desktop {
+    display: none;
+  }
+
   /* about me illustration of desktop version is hidden for mobile version */
   .about_me_illustration_desktop {
     display: none;
@@ -526,17 +522,15 @@ input::placeholder {
   .main_menu {
     display: none;
   }
-
-  /* first and last name input field of contact form are hidden for mobile version */
-  .last_name,
-  .first_name {
-    display: none;
-  }
 }
 
 /* Styling for desktop vesrion */
 
 @media (min-width: 995px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .main-header {
     font-size: 72px;
     line-height: 81px;
@@ -570,7 +564,7 @@ input::placeholder {
     font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 20px;
     height: 100%;
   }
@@ -599,18 +593,24 @@ input::placeholder {
 
   .illustration-header-desktop {
     position: absolute;
-    right: 10px;
+    right: 0;
     bottom: 0;
   }
 
-  .work_heading_block {
+  .works_heading {
     display: flex;
     align-items: center;
-    align-content: center;
-    gap: 24px;
-    justify-content: flex-start;
-    margin: 0 156px;
+    margin-left: 150px;
     margin-bottom: 114px;
+    font-size: 45px;
+    line-height: 52px;
+    border-bottom: none;
+  }
+
+  .horizontal_line {
+    border-bottom: 1px solid #212121;
+    width: 65%;
+    margin-left: 20px;
   }
 
   .social-media-links {
@@ -635,33 +635,20 @@ input::placeholder {
     align-self: center;
   }
 
-  .horizontal_line {
-    width: 794px;
-    height: 1px;
-    border-bottom: 1px solid #212121;
-    margin: 0;
-  }
-
-  .works_heading {
-    font-size: 40px;
-    line-height: 52px;
-    margin: 0;
-    align-self: center;
-  }
-
   .works {
+    box-sizing: border-box;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     column-gap: 24px;
     row-gap: 37px;
+    width: 85%;
     margin: 0 auto;
-    width: 1156px;
     margin-bottom: 130px;
   }
 
   .work_card {
     height: 435px;
-    width: 369px;
+    width: 100%;
   }
 
   /* work card animation */
@@ -673,6 +660,7 @@ input::placeholder {
   .first_card,
   .card {
     justify-content: flex-end;
+    background-size: 100% 100%;
   }
 
   .card .see_project {
@@ -684,8 +672,25 @@ input::placeholder {
     opacity: 1;
   }
 
-  .card .used_technology:hover {
-    display: none;
+  .card .see_project {
+    opacity: 0;
+  }
+
+  .hover-effect {
+    padding-top: 100px;
+  }
+
+  .hover-effect:hover {
+    opacity: 0;
+  }
+
+  .see_project:hover {
+    opacity: 1;
+  }
+
+  .hover-effect:hover + .see_project {
+    display: block;
+    opacity: 1;
   }
 
   .multi_post {
@@ -703,26 +708,52 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 30%;
+
+    /* width: 30%; */
   }
 
-  .multi_post_img {
-    width: 684px;
-    height: 448px;
+  .multi_post_img_mobile {
+    display: none;
+  }
+
+  .multi_post_img_desktop {
+    width: 60%;
+    height: auto;
+    left: 24px;
+    top: 0;
+    border-radius: 0;
+    margin-bottom: 24px;
+    margin-right: 24px;
+  }
+
+  .multi_postproject_description {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .multi_post_heading {
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .about_myself {
     padding: 0 143px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .about_me {
+    box-sizing: border-box;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 100px;
     padding-bottom: 0;
-    margin-bottom: 100px;
-    gap: 250px;
+    margin-bottom: 40px;
+    width: 100%;
   }
 
   .aboutme_description {
@@ -730,18 +761,20 @@ input::placeholder {
     flex-direction: column;
     gap: 24px;
     justify-content: space-between;
-    width: 800px;
+    width: 616px;
     margin-right: 50px;
   }
 
   .about_myself_heading {
-    font-size: 72px;
-    line-height: 81px;
+    font-size: 82px;
+    line-height: 86px;
+    letter-spacing: 2.5px;
   }
 
   .about_me_description {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.4px;
   }
 
   .get_my_resume {
@@ -750,6 +783,12 @@ input::placeholder {
 
   .about_me_illustration_mobile {
     display: none;
+  }
+
+  .about_me_illustration_desktop {
+    position: absolute;
+    right: -20%;
+    bottom: 0;
   }
 
   .about_myself_line {
@@ -772,56 +811,57 @@ input::placeholder {
 
   .contact_section {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    padding: 0 125px;
+    padding-bottom: 154px;
   }
 
   .contact_section h3 {
-    margin-top: 100px;
     font-size: 40px;
     line-height: 52px;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
   }
 
   .contact_form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 0;
     margin-right: 140px;
-    margin-top: 100px;
+    padding: 0;
   }
 
-  .first_name,
-  .last_name,
+  .full_name,
   .email {
     border-bottom: 1px solid #000;
     padding: 16px;
+    width: 130%;
   }
 
-  .full_name {
-    display: none;
-  }
-
-  .email {
-    grid-column: 1/3;
-    grid-row: 2/3;
-    width: 87.5%;
+  .submit_button {
+    width: 42%;
   }
 
   .message {
     grid-row: 3/4;
     grid-column: 1/-1;
-    width: 87.5%;
     padding: 16px;
+    width: 130%;
   }
 
-  input::placeholder, textarea::placeholder {
+  input::placeholder,
+  textarea::placeholder {
     font-size: 15px;
     transition-property: font-size;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
     transition-timing-function: ease;
   }
 
-  input:focus::placeholder, textarea:focus::placeholder {
+  input:focus::placeholder,
+  textarea:focus::placeholder {
     font-size: 20px;
   }
 
