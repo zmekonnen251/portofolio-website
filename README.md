@@ -12,6 +12,10 @@
   <img src="img/desktop_version.png">
 </p>
 
+<p align="center">
+  <img src="img/mobile-menu.png">
+</p>
+
 ## Built With
 
 - HTML,CSS and JavaScript
