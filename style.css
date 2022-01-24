@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +20,26 @@
   align-items: center;
   text-align: center;
 }
-
+.dn {
+  display: none;
+}
+.db {
+  display: block;
+}
+.mobile-nav-container {
+  display: flex;
+  flex-flow: column;
+}
+.mobile-nav-container > img {
+  align-self: flex-end;
+}
+.mobile_nav {
+  list-style: none;
+}
+.mobile_menu_links {
+   text-decoration: none;
+   color: #FFF5E1;
+}
 .logo {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;

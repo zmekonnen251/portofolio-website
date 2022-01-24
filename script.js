@@ -3,7 +3,9 @@ const header = document.querySelector("header");
 const mobile_menu_list = ["Portfolio", "About", "Contact"];
 
 const displayMenu = (event) => {
+  document.querySelector('.nav').classList.add('dn')
   const nav = document.createElement("nav");
+  nav.className = 'mobile-nav-container'
   const xIcon = document.createElement("img");
   xIcon.src = "./img/x-Icon.png";
   xIcon.alt = "x icon";
