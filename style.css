@@ -20,12 +20,8 @@
   align-items: center;
   text-align: center;
 }
-.dn {
-  display: none;
-}
-.db {
-  display: block;
-}
+
+
 .mobile-nav-container {
   display: flex;
   flex-flow: column;
@@ -53,7 +49,9 @@
   text-decoration: none;
   color: #fff5e1;
 }
-
+.dn {
+  display: none;
+}
 .logo {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;

@@ -26,4 +26,13 @@ const displayMenu = (event) => {
   header.appendChild(nav);
 };
 
+const resetDefault = (event) =>  {
+  if(event.target && event.target.parentNode.className==='mobile-nav-container'){
+     document.querySelector('.nav').classList.remove('dn')
+     document.querySelector('.mobile-nav-container').classList.add('dn')
+  }
+
+}
 mobile_menu.addEventListener("click", displayMenu);
+
+document.addEventListener('click',resetDefault)
