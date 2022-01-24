@@ -29,6 +29,7 @@
 .mobile-nav-container {
   display: flex;
   flex-flow: column;
+  height: 100vh;
 }
 .mobile-nav-container > img {
   align-self: flex-end;
@@ -36,10 +37,23 @@
 .mobile_nav {
   list-style: none;
 }
-.mobile_menu_links {
-   text-decoration: none;
-   color: #FFF5E1;
+
+.mobile-item-list {
+  border-bottom: 1px solid #6f6c6b;
+  padding-bottom: 15px;
+  margin-top: 24px;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  padding-left: 20px;
 }
+.mobile_menu_links {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
 .logo {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
