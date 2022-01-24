@@ -27,12 +27,16 @@ const displayMenu = (event) => {
 };
 
 const resetDefault = (event) =>  {
-  if(event.target && event.target.parentNode.className==='mobile-nav-container'){
-     document.querySelector('.nav').classList.remove('dn')
-     document.querySelector('.mobile-nav-container').classList.add('dn')
+  if(
+     (event.target && event.target.parentNode.className==='mobile-nav-container')
+    ||
+     (event.target && event.target.className==='mobile_menu_links')  
+    ){
+     document.querySelector('.mobile-nav-container').remove()
+     document.querySelector('.nav').classList.remove('dn') 
   }
 
 }
 mobile_menu.addEventListener("click", displayMenu);
 
-document.addEventListener('click',resetDefault)
+document.addEventListener('click',(event) => resetDefault(event))
