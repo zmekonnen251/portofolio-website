@@ -1,24 +1,24 @@
-const mobile_menu = document.querySelector(".nav img");
-const header = document.querySelector("header");
-const mobile_menu_list = ["Portfolio", "About", "Contact"];
+const mobileMenu = document.querySelector('.nav img');
+const header = document.querySelector('header');
+const mobileMenuList = ['Portfolio', 'About', 'Contact'];
 
-const displayMenu = (event) => {
-  document.querySelector('.nav').classList.add('dn')
-  const nav = document.createElement("nav");
-  nav.className = 'mobile-nav-container'
-  const xIcon = document.createElement("img");
-  xIcon.src = "./img/x-Icon.png";
-  xIcon.alt = "x icon";
-  const ul = document.createElement("ul");
-  ul.className = "mobile_nav";
-  for (let i = 0; i < 3; i++) {
-    let element = document.createElement("li");
-    element.className = "mobile-item-list";
-    let anchor_tag = document.createElement("a");
-    anchor_tag.innerText = mobile_menu_list[i];
-    anchor_tag.href = "#" + mobile_menu_list[i].toLowerCase();
-    anchor_tag.className = "mobile_menu_links";
-    element.appendChild(anchor_tag);
+const displayMenu = () => {
+  document.querySelector('.nav').classList.add('dn');
+  const nav = document.createElement('nav');
+  nav.className = 'mobile-nav-container';
+  const xIcon = document.createElement('img');
+  xIcon.src = './img/x-Icon.png';
+  xIcon.alt = 'x icon';
+  const ul = document.createElement('ul');
+  ul.className = 'mobile_nav';
+  for (let i = 0; i < 3; i += 1) {
+    const element = document.createElement('li');
+    element.className = 'mobile-item-list';
+    const anchorTag = document.createElement('a');
+    anchorTag.innerText = mobileMenuList[i];
+    anchorTag.href = `#${mobileMenuList[i].toLowerCase()}`;
+    anchorTag.className = 'mobile_menu_links';
+    element.appendChild(anchorTag);
     ul.appendChild(element);
   }
   nav.appendChild(xIcon);
@@ -26,17 +26,16 @@ const displayMenu = (event) => {
   header.appendChild(nav);
 };
 
-const resetDefault = (event) =>  {
-  if(
-     (event.target && event.target.parentNode.className==='mobile-nav-container')
-    ||
-     (event.target && event.target.className==='mobile_menu_links')  
-    ){
-     document.querySelector('.mobile-nav-container').remove()
-     document.querySelector('.nav').classList.remove('dn') 
+const resetDefault = (event) => {
+  if (
+    (event.target
+      && event.target.parentNode.className === 'mobile-nav-container')
+    || (event.target && event.target.className === 'mobile_menu_links')
+  ) {
+    document.querySelector('.mobile-nav-container').remove();
+    document.querySelector('.nav').classList.remove('dn');
   }
+};
+mobileMenu.addEventListener('click', displayMenu);
 
-}
-mobile_menu.addEventListener("click", displayMenu);
-
-document.addEventListener('click',(event) => resetDefault(event))
+document.addEventListener('click', (event) => resetDefault(event));
