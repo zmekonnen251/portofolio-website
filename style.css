@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -21,15 +22,16 @@
   text-align: center;
 }
 
-
 .mobile-nav-container {
   display: flex;
   flex-flow: column;
   height: 100vh;
 }
+
 .mobile-nav-container > img {
   align-self: flex-end;
 }
+
 .mobile_nav {
   list-style: none;
 }
@@ -45,13 +47,16 @@
   line-height: 44px;
   padding-left: 20px;
 }
+
 .mobile_menu_links {
   text-decoration: none;
   color: #fff5e1;
 }
+
 .dn {
   display: none;
 }
+
 .logo {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-style: normal;
@@ -118,7 +123,7 @@
   display: flex;
   list-style: none;
   gap: 15px;
-  padding: 9px 9px;
+  padding: 9px;
 }
 
 .illustration-header-mobile {
@@ -442,7 +447,7 @@ button:hover {
 }
 
 .contact_section {
-  padding: 120px 24px 0 24px;
+  padding: 120px 24px 0;
   display: flex;
   flex-direction: column;
   border-bottom: 2px #dfe1e6 solid;
