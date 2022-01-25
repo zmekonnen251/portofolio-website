@@ -2,7 +2,7 @@
 
 # Module 1: Portfolio Website
 
-> The project is to set up the portfolio website project and work on the mobile and Desktop version skeleton of the website.
+> The project is to set up the portfolio website project and work on the mobile and Desktop version skeleton of the website. And to add mobile menu using javascript.
 
 <p align="center">
   <img src="https://github.com/zmekonnen251/portofolio-website/blob/master/mobile-version-homepage.png">
@@ -12,9 +12,13 @@
   <img src="img/desktop_version.png">
 </p>
 
+<p align="center">
+  <img src="img/mobile-menu.png">
+</p>
+
 ## Built With
 
-- HTML and CSS
+- HTML,CSS and JavaScript
 - GitHub and Figma
 
 ## Live Demo
