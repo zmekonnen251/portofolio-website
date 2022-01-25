@@ -21,11 +21,12 @@
   align-items: center;
   text-align: center;
 }
-
+.h-100 {
+  height: 100vh;
+}
 .mobile-nav-container {
   display: flex;
   flex-flow: column;
-  height: 100vh;
 }
 
 .mobile-nav-container > img {
@@ -55,6 +56,10 @@
 
 .dn {
   display: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
 
 .logo {
