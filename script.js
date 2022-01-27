@@ -1,8 +1,7 @@
-const mobileMenu = document.querySelector('.nav img');
-const header = document.querySelector('header');
-const mobileMenuList = ['Portfolio', 'About', 'Contact'];
-
 const displayMenu = () => {
+  const mobileMenu = document.querySelector('.nav img');
+  const header = document.querySelector('header');
+  const mobileMenuList = ['Portfolio', 'About', 'Contact'];
   document.querySelector('.nav').classList.add('dn');
   document.querySelector('body').classList.add('no-scroll');
   header.classList.add('h-100');
@@ -37,9 +36,74 @@ const resetDefault = (event) => {
     document.querySelector('.mobile-nav-container').remove();
     document.querySelector('.nav').classList.remove('dn');
     document.querySelector('body').classList.remove('no-scroll');
-    header.classList.remove('h-100');
+    document.querySelector('header').classList.remove('h-100');
   }
 };
+const mobileMenu = document.querySelector('.nav img');
 mobileMenu.addEventListener('click', displayMenu);
 
 document.addEventListener('click', (event) => resetDefault(event));
+
+/*works section*/
+const projectsData = ()  => {
+  const projectsContainer = document.querySelector('.works')
+  const cln = projectsContainer.cloneNode(true)
+  const projectsDataObjectMobile = Array.from(cln.children).map(project => ({
+      name : "Multi Post Stories",
+      closePopupSrc : "./img/close-btn.png",
+      ul : ['html','Bootstrap','Ruby on rails'],
+      projectImgSrc: './img/project-img-mobile.png',
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`
+  }))
+  const projectsDataObjectDesktop = Array.from(cln.children).map(project => ({
+      name : "Keeping track of hundreds  of components website",
+      closePopupSrc : "./img/close-btn.png",
+      ul : ['html','Bootstrap','Ruby on rails'],
+      projectImgSrc: './img/project-img-desktop.png',
+      description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`
+  }))
+  return [projectsDataObjectMobile,projectsDataObjectDesktop] 
+}
+const popupProject = (event) => {
+    const [mobilePopupsData,desktopPopusData] = projectsData()
+    const projectBtns = document.querySelectorAll('.popup-btn')
+    const popIndex = Array.from(projectBtns).indexOf(event.target)
+    const projectPopups = document.querySelectorAll('.popup-container')
+    if(window.innerWidth >= 995) {
+        projectPopups[popIndex].querySelector('.popup-heading').innerText= desktopPopusData[popIndex].name;
+        projectPopups[popIndex].querySelector('.close-btn').src = desktopPopusData[popIndex].closePopupSrc;
+        projectPopups[popIndex].querySelector('.popup-img').src = desktopPopusData[popIndex].projectImgSrc;
+        projectPopups[popIndex].querySelector('.popup-description').innerText = 
+                                                                     desktopPopusData[popIndex].description;
+        const ul = projectPopups[popIndex].querySelector('.popup-list')
+        console.log(ul.children)
+        Array.from(ul.children).map((li,i) => {
+           return li.innerText =  mobilePopupsData[popIndex].ul[i]
+        })
+    }
+    else {
+        projectPopups[popIndex].querySelector('.popup-heading').innerText= mobilePopupsData[popIndex].name;
+        projectPopups[popIndex].querySelector('.close-btn').src = mobilePopupsData[popIndex].closePopupSrc;
+        projectPopups[popIndex].querySelector('.popup-img').src = mobilePopupsData[popIndex].projectImgSrc;
+        projectPopups[popIndex].querySelector('.popup-description').innerText = 
+                                                                  mobilePopupsData[popIndex].description;
+        const ul = projectPopups[popIndex].querySelector('.popup-list')
+        console.log(ul.children)
+        Array.from(ul.children).map((li,i) => {
+           return li.innerText =  mobilePopupsData[popIndex].ul[i]
+        })
+    }
+    projectPopups[popIndex].parentNode.classList.toggle('dn')
+}
+
+const projectBtns = document.querySelectorAll('.popup-btn')
+
+projectBtns[0].addEventListener('click',popupProject)
+projectBtns[1].addEventListener('click',popupProject)
+projectBtns[2].addEventListener('click',popupProject)
+projectBtns[3].addEventListener('click',popupProject)
+projectBtns[4].addEventListener('click',popupProject)
+projectBtns[5].addEventListener('click',popupProject)
+projectBtns[6].addEventListener('click',popupProject)
+
+
