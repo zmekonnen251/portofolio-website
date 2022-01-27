@@ -336,7 +336,6 @@
 }
 
 .popup-container {
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,24 +367,27 @@
 
 .popup-list-item {
   padding: 6px 9px;
-  font-family: Poppins;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #3c3a39;
 }
+
 .popup-list {
   margin-right: auto;
   margin-bottom: 0;
 }
+
 .popup-img {
   width: 100%;
   height: 45%;
   margin: 20px 0;
 }
+
 .popup-description {
-  font-family: Inter;
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -394,6 +396,7 @@
   margin-bottom: 20px;
   text-align: justify;
 }
+
 .see-live,
 .see-source {
   width: fit-content;
@@ -404,13 +407,11 @@
 
 .see-live {
   margin-right: 30px;
+  margin-left: 0;
 }
 
 .popup-buttons {
   margin-right: auto;
-}
-.see-live {
-  margin-left: 0;
 }
 
 .about_me {
@@ -865,10 +866,6 @@ input::placeholder {
     line-height: 52px;
   }
 
-  .popup-container {
-    position: relative;
-  }
-
   .popup-heading {
     width: 90%;
     margin-bottom: 5px;
@@ -884,34 +881,35 @@ input::placeholder {
   }
 
   .popup-img {
-    width: 60%;
+    width: 50vw;
     margin-right: auto;
     align-self: flex-start;
     margin-block-start: 0;
-    height: 78%;
+    height: 100%;
     margin-bottom: 0;
   }
 
   .popup-description {
-    width: 38%;
     margin-top: 0;
-    align-self: flex-start;
     font-size: 16px;
     line-height: 30px;
+    margin-block: 0;
   }
 
   .popup-buttons {
-    position: absolute;
-    bottom: 0.9rem;
-    right: 16.4375rem;
+    width: 40%;
+    height: 100%;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .see-live,
   .see-source {
     width: fit-content;
-    margin-left: auto;
-    flex: 0 0 20%;
-    margin-bottom: 0;
+    align-self: flex-end;
+    margin: 0;
+    margin-left: 10px;
   }
 
   .about_myself {
@@ -1046,6 +1044,7 @@ input::placeholder {
     flex-direction: row;
   }
 }
+
 .w-100-no-padding-margin {
   width: 100vw;
   padding: 0;
@@ -1056,6 +1055,7 @@ input::placeholder {
   filter: blur(5px);
   height: 100vh;
 }
+
 .blur {
   filter: blur(5px);
 }
