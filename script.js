@@ -60,7 +60,7 @@ const projectsData = () => {
     closePopupSrc: "./img/close-btn.png",
     ul: ["html", "Bootstrap", "Ruby on rails"],
     projectImgSrc: "./img/project-img-desktop.png",
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
+    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.`,
   }));
   return [projectsDataObjectMobile, projectsDataObjectDesktop];
 };
@@ -72,13 +72,16 @@ const popupProject = (event) => {
   const projectBtns = document.querySelectorAll(".popup-btn");
   const popIndex = Array.from(projectBtns).indexOf(event.target);
   const projectPopups = document.querySelectorAll(".popup-container");
-  if(projectPopups[popIndex].children[1].innerText.length){
+  if (projectPopups[popIndex].children[1].innerText.length) {
     projectPopups[popIndex].parentNode.classList.toggle("dn");
     document.querySelector("body").classList.toggle("no-scroll");
-    document.querySelector('.works').classList.toggle("w-100-no-padding-margin")
+    document
+      .querySelector(".works")
+      .classList.toggle("w-100-no-padding-margin");
+    document.querySelector(".headline").classList.toggle("blur-100vh");
+    document.querySelector("header").classList.toggle("blur");
     return;
-  }
-  else if (window.innerWidth >= 995) {
+  } else if (window.innerWidth >= 995) {
     projectPopups[popIndex].querySelector(".popup-heading").innerText =
       desktopPopusData[popIndex].name;
     projectPopups[popIndex].querySelector(".close-btn").src =
@@ -109,7 +112,9 @@ const popupProject = (event) => {
   }
   projectPopups[popIndex].parentNode.classList.toggle("dn");
   document.querySelector("body").classList.toggle("no-scroll");
-  document.querySelector('.works').classList.toggle("w-100-no-padding-margin")
+  document.querySelector(".works").classList.toggle("w-100-no-padding-margin");
+  document.querySelector(".headline").classList.toggle("blur-100vh");
+  document.querySelector("header").classList.toggle("blur");
 };
 
 const projectBtns = document.querySelectorAll(".popup-btn");
@@ -123,10 +128,14 @@ projectBtns[5].addEventListener("click", popupProject);
 projectBtns[6].addEventListener("click", popupProject);
 
 const removePopup = (event) => {
-   if(event.target && event.target.className === 'close-btn' ) {
-      event.target.parentNode.parentNode.classList.toggle("dn");
-      document.querySelector("body").classList.toggle("no-scroll");
-     document.querySelector('.works').classList.toggle("w-100-no-padding-margin")       
-   }
-}
-document.addEventListener('click',removePopup)
+  if (event.target && event.target.className === "close-btn") {
+    event.target.parentNode.parentNode.classList.toggle("dn");
+    document.querySelector("body").classList.toggle("no-scroll");
+    document
+      .querySelector(".works")
+      .classList.toggle("w-100-no-padding-margin");
+    document.querySelector(".headline").classList.toggle("blur-100vh");
+    document.querySelector("header").classList.toggle("blur");
+  }
+};
+document.addEventListener("click", removePopup);
