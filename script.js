@@ -64,6 +64,7 @@ const projectsData = () => {
   }));
   return [projectsDataObjectMobile, projectsDataObjectDesktop];
 };
+
 const popupProject = (event) => {
   const headlineLink = document.querySelector("#headline");
   headlineLink.click();
@@ -71,7 +72,13 @@ const popupProject = (event) => {
   const projectBtns = document.querySelectorAll(".popup-btn");
   const popIndex = Array.from(projectBtns).indexOf(event.target);
   const projectPopups = document.querySelectorAll(".popup-container");
-  if (window.innerWidth >= 995) {
+  if(projectPopups[popIndex].children[1].innerText.length){
+    projectPopups[popIndex].parentNode.classList.toggle("dn");
+    document.querySelector("body").classList.toggle("no-scroll");
+    document.querySelector('.works').classList.toggle("w-100-no-padding-margin")
+    return;
+  }
+  else if (window.innerWidth >= 995) {
     projectPopups[popIndex].querySelector(".popup-heading").innerText =
       desktopPopusData[popIndex].name;
     projectPopups[popIndex].querySelector(".close-btn").src =
@@ -101,7 +108,8 @@ const popupProject = (event) => {
     });
   }
   projectPopups[popIndex].parentNode.classList.toggle("dn");
-  document.querySelector("body").classList.add("no-scroll");
+  document.querySelector("body").classList.toggle("no-scroll");
+  document.querySelector('.works').classList.toggle("w-100-no-padding-margin")
 };
 
 const projectBtns = document.querySelectorAll(".popup-btn");
@@ -113,3 +121,12 @@ projectBtns[3].addEventListener("click", popupProject);
 projectBtns[4].addEventListener("click", popupProject);
 projectBtns[5].addEventListener("click", popupProject);
 projectBtns[6].addEventListener("click", popupProject);
+
+const removePopup = (event) => {
+   if(event.target && event.target.className === 'close-btn' ) {
+      event.target.parentNode.parentNode.classList.toggle("dn");
+      document.querySelector("body").classList.toggle("no-scroll");
+     document.querySelector('.works').classList.toggle("w-100-no-padding-margin")       
+   }
+}
+document.addEventListener('click',removePopup)
