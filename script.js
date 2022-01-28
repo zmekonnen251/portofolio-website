@@ -134,6 +134,7 @@ const removePopup = (event) => {
 };
 document.addEventListener('click', removePopup);
 
+/*email validation*/
 const formSubmit = document.querySelector('#form');
 const email = document.querySelector('#email');
 const errorMessage = document.querySelector('small');
@@ -149,3 +150,4 @@ const emailValidation = (event) => {
 };
 
 formSubmit.addEventListener('submit', emailValidation);
+/*local storage*/
