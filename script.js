@@ -155,16 +155,19 @@ formSubmit.addEventListener('submit', emailValidation);
 
 const fullName = document.querySelector('#name');
 const message = document.querySelector('#message');
-
-const data = {name:"",email:"",message:""};
 const storeData = (input) => {
-
+  if (!window.localStorage.storedFormData) {
+    const data = { name: '', email: '', message: '' };
+    window.localStorage.storedFormData = JSON.stringify(data);
+    return;
+  }
+  const data = JSON.parse(window.localStorage.storedFormData);
   data[input.name] = input.value;
-  window.localStorage.setItem('storedFormData', JSON.stringify(data));
+  window.localStorage.storedFormData = JSON.stringify(data);
 };
 
 const getStoredData = () => {
-  const inputData=  JSON.parse(window.localStorage.storedFormData)
+  const inputData = JSON.parse(window.localStorage.storedFormData);
   return [
     inputData.name,
     inputData.email,
@@ -172,7 +175,7 @@ const getStoredData = () => {
   ];
 };
 const handleInput = (event) => {
-     storeData(event.target);  
+  storeData(event.target);
 };
 
 email.addEventListener('input', handleInput);
@@ -180,13 +183,16 @@ fullName.addEventListener('input', handleInput);
 message.addEventListener('input', handleInput);
 
 const displayStoredData = () => {
-     console.log('hi')
-    if (window.localStorage.storedFormData) {
-      const [nameValue,emailValue,messageValue] = getStoredData()
-      email.value= emailValue
-      fullName.value= nameValue
-      message.value= messageValue
-      return
-    }
-}
+  const inputsData = JSON.parse(window.localStorage.storedFormData);
+  if (
+    inputsData.name.length
+        || inputsData.email.length
+        || inputsData.message.length
+  ) {
+    const [nameValue, emailValue, messageValue] = getStoredData();
+    email.value = emailValue;
+    fullName.value = nameValue;
+    message.value = messageValue;
+  }
+};
 window.addEventListener('load', displayStoredData);
