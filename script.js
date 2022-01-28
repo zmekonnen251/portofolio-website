@@ -156,29 +156,37 @@ formSubmit.addEventListener('submit', emailValidation);
 const fullName = document.querySelector('#name');
 const message = document.querySelector('#message');
 
-const data = {};
+const data = {name:"",email:"",message:""};
 const storeData = (input) => {
+
   data[input.name] = input.value;
   window.localStorage.setItem('storedFormData', JSON.stringify(data));
 };
 
 const getStoredData = () => {
-  window.localStorage.getItem('storedFormData');
+  const inputData=  JSON.parse(window.localStorage.storedFormData)
   return [
-    JSON.parse(getStoredData).name,
-    JSON.parse(getStoredData).email,
-    JSON.parse(getStoredData).message,
+    inputData.name,
+    inputData.email,
+    inputData.message,
   ];
 };
 const handleInput = (event) => {
-  if (localStorage.storeFormData) {
-    [fullName.value, email.value, message.value] = getStoredData();
-    return;
-  }
-
-  return storeData(event.target);
+     storeData(event.target);  
 };
 
 email.addEventListener('input', handleInput);
 fullName.addEventListener('input', handleInput);
 message.addEventListener('input', handleInput);
+
+const displayStoredData = () => {
+     console.log('hi')
+    if (window.localStorage.storedFormData) {
+      const [nameValue,emailValue,messageValue] = getStoredData()
+      email.value= emailValue
+      fullName.value= nameValue
+      message.value= messageValue
+      return
+    }
+}
+window.addEventListener('load', displayStoredData);
