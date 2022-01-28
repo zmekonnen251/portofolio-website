@@ -11,7 +11,7 @@ const displayMenu = () => {
   xIcon.alt = "x icon";
   const ul = document.createElement("ul");
   ul.className = "mobile_nav";
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i <= 3; i += 1) {
     const element = document.createElement("li");
     element.className = "mobile-item-list";
     const anchorTag = document.createElement("a");
@@ -109,7 +109,6 @@ const popupProject = (event) => {
     const ul = projectPopups[popIndex].querySelector(".popup-list");
     Array.from(ul.children).map((li, i) => {
       li.innerText = mobilePopupsData[popIndex].ul[i];
-      return li.innerText;
     });
   }
   projectPopups[popIndex].parentNode.classList.toggle("dn");
