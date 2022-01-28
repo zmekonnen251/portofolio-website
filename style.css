@@ -397,6 +397,10 @@
   text-align: justify;
 }
 
+.popup-buttons > a {
+  align-self: flex-end;
+}
+
 .see-live,
 .see-source {
   width: fit-content;
