@@ -158,6 +158,7 @@ const emailValidation = (event) => {
 };
 
 formSubmit.addEventListener("submit", emailValidation);
+
 /*local storage*/
 
 const fullName = document.querySelector("#name");
@@ -172,3 +173,14 @@ const data = {
 const storeData = () => {
   window.localStorage.setItem("storedFormData", JSON.stringify(data));
 };
+const getStoredData = () => {
+   window.localStorage.getItem('storedFormData') 
+   return [JSON.parse(getStoredData).name,JSON.parse(getStoredData).email,JSON.parse(getStoredData).message]
+}
+const handleInput = (event) => {
+     
+}
+
+email.addEventListener('input',handleInput)
+fullName.addEventListener('input',handleInput)
+message.addEventListener('input',handleInput)
