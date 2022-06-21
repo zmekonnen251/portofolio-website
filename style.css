@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap');
 
 * {
   margin: 0;
@@ -43,7 +43,7 @@
   border-bottom: 1px solid #6f6c6b;
   padding-bottom: 15px;
   margin-top: 24px;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -65,7 +65,7 @@
 }
 
 .logo {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -89,7 +89,7 @@
 }
 
 .main-header {
-  font-family: "Crete Round", "Times New Roman", Times, serif;
+  font-family: 'Crete Round', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -101,7 +101,7 @@
 
 .profession {
   color: #fff5e1;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -110,7 +110,7 @@
 }
 
 .description {
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -144,13 +144,13 @@
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 24px;
-  row-gap: 64px;
+  gap: 40px;
   margin-bottom: 120px;
   box-sizing: border-box;
 }
 
 .works_heading {
-  font-family: "Crete Round", "Times New Roman", Times, serif;
+  font-family: 'Crete Round', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 37px;
@@ -177,7 +177,7 @@
 }
 
 .multi_post_heading {
-  font-family: "Crete Round", "Times New Roman", Times, serif;
+  font-family: 'Crete Round', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -187,7 +187,7 @@
 }
 
 .multi_postproject_description {
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -211,7 +211,7 @@
   border: 1px solid #8993a4;
   padding: 10px 12px;
   color: #000;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -220,7 +220,7 @@
 
 .project_description_multi_post {
   margin-right: 16px;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -235,7 +235,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -246,7 +246,6 @@
 .work_card {
   display: flex;
   flex-direction: column;
-  background-image: url("img/Img_placeholder_2.png");
   background-size: 100% 100%;
   position: relative;
   transition-property: all;
@@ -258,9 +257,8 @@
 .project_heading {
   margin-left: 16px;
   margin-right: 16px;
-  margin-top: 84px;
-  margin-bottom: 12px;
-  font-family: "Crete Round", "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+  font-family: 'Crete Round', 'Times New Roman', Times, serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -272,35 +270,41 @@
 .project_description {
   margin-left: 16px;
   margin-right: 16px;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .used_technology {
   display: flex;
+  flex-flow: wrap;
   list-style: none;
   gap: 12px;
   margin-left: 16px;
   padding-left: 0;
-  margin-bottom: 22px;
+  margin-bottom: 82px;
   margin-top: 0;
 }
 
 .used_technology li {
   border: 0 #3c3a39 solid;
   padding: 10px 12px;
-  background: #ffffff3d;
+  background: #e4d9d93d;
   color: #fff;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+}
+
+.see_project {
+  position: absolute;
+  bottom: 0;
 }
 
 .see_project,
@@ -310,7 +314,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -351,7 +355,7 @@
 
 .popup-heading {
   width: 83%;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -367,7 +371,7 @@
 
 .popup-list-item {
   padding: 6px 9px;
-  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -387,7 +391,7 @@
 }
 
 .popup-description {
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -425,7 +429,7 @@
 }
 
 .about_myself_heading {
-  font-family: "Crete Round", "Times New Roman", Times, serif;
+  font-family: 'Crete Round', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -439,7 +443,7 @@
 }
 
 .about_me_description {
-  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -454,7 +458,7 @@
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -491,7 +495,7 @@
   gap: 44px;
   width: 100%;
   padding-left: 0;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -512,7 +516,7 @@
 .languages li:first-child,
 .skills li:first-child,
 .frameworks li:first-child {
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -557,7 +561,7 @@ button:hover {
 
 .contact_section h3 {
   color: #172b4d;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -581,7 +585,7 @@ button:hover {
   padding: 12px;
   width: 327px;
   border-bottom: 1px solid #000;
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
@@ -598,19 +602,19 @@ button:hover {
   resize: none;
   padding: 12px;
   border: none;
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
 
 input::placeholder {
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
 
 .message::placeholder {
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
@@ -620,7 +624,7 @@ input::placeholder {
   background-color: #ff6b00;
   border: 0;
   color: #fff;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -630,7 +634,7 @@ input::placeholder {
 
 small {
   font-size: 16px;
-  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
   color: red;
   font-weight: bold;
 }
@@ -705,7 +709,7 @@ small {
   }
 
   .desktop_menu li {
-    font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -781,18 +785,17 @@ small {
 
   .works {
     box-sizing: border-box;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 24px;
-    row-gap: 37px;
-    width: 85%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 89%;
     margin: 0 auto;
     margin-bottom: 130px;
   }
 
   .work_card {
-    height: 435px;
-    width: 100%;
+    height: auto;
+    width: 370px;
+    box-sizing: border-box;
   }
 
   /* work card animation */
@@ -825,7 +828,7 @@ small {
   }
 
   .hover-effect:hover {
-    opacity: 0;
+    opacity: 0.8;
   }
 
   .hover-effect:hover + .see_project {
@@ -838,18 +841,18 @@ small {
     grid-row: 1/2;
     flex-direction: row;
     gap: 24px;
+    margin-bottom: 40px;
   }
 
   .see_project_multi_post {
-    width: 30%;
+    width: 60%;
   }
 
   .multipost_descrption {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
-    /* width: 30%; */
+    padding-bottom: 25px;
   }
 
   .multi_post_img_mobile {
