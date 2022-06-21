@@ -171,22 +171,6 @@ const removePopup = (event) => {
   }
 };
 
-/* email validation */
-// const formSubmit = document.querySelector('#form');
-// const email = document.querySelector('#email');
-// const errorMessage = document.querySelector('small');
-
-// const emailValidation = (event) => {
-//   if (email.value !== email.value.toLowerCase()) {
-//     event.preventDefault();
-//     errorMessage.innerText = 'Error: The email has to be in lowercase!';
-//     errorMessage.classList.toggle('dn');
-//     return errorMessage;
-//   }
-//   return formSubmit.submit();
-// };
-
-// formSubmit.addEventListener('submit', emailValidation);
 
 /* local storage */
 
