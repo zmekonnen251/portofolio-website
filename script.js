@@ -56,7 +56,7 @@ const projectData = [
     type: 'regular',
     name: 'Todo List',
     screen_shoots: 'img/img_placeholder.png',
-    description: `The project is a To-do list web app. It has basic CRUD operations, such as adding, removing, and editing tasks from the list. Don't worry about the storage. Your lists will be in your browser's local storage. I used JavsScript ,Css ,Html and Webpack to build this project.`,
+    description: "The project is a To-do list web app. It has basic CRUD operations, such as adding, removing, and editing tasks from the list. Don't worry about the storage. Your lists will be in your browser's local storage. I used JavsScript ,Css ,Html and Webpack to build this project.",
     used_technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack'],
     img: [
       'img/project_screen_shots/to-do-list1.png',
@@ -70,7 +70,7 @@ const projectData = [
   {
     type: 'regular',
     name: 'Space Travelers Hub',
-    description: `The Space-Travelers-Hub is a web application that displays real-time data from the SpaceX API. Users can book rockets, dragons, and join selected space missions. You may also cancel any reservations that you wish.`,
+    description: 'The Space-Travelers-Hub is a web application that displays real-time data from the SpaceX API. Users can book rockets, dragons, and join selected space missions. You may also cancel any reservations that you wish.',
     used_technologies: ['React.js', 'Redux', 'HTML', 'CSS', 'JavaScript'],
     img: [
       'img/project_screen_shots/space-traveler-mobile.png',
@@ -85,7 +85,7 @@ const projectData = [
   {
     type: 'regular',
     name: 'Lets Chill',
-    description: `Let's Chill is a web application that generates random movies from the tv Maze API.`,
+    description: "Let's Chill is a web application that generates random movies from the tv Maze API. Let's Chill is a web application that generates random movies from the tv Maze API.",
     used_technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'Git'],
     img: [
       'img/project_screen_shots/mobile-home.png',
@@ -99,7 +99,7 @@ const projectData = [
   {
     type: 'regular',
     name: 'Space Travelers Hub',
-    description: `The Space-Travelers-Hub is a web application that displays real-time data from the SpaceX API. Users can book rockets, dragons, and join selected space missions. You may also cancel any reservations that you wish.`,
+    description: 'The Space-Travelers-Hub is a web application that displays real-time data from the SpaceX API. Users can book rockets, dragons, and join selected space missions. You may also cancel any reservations that you wish.',
     used_technologies: ['React.js', 'Redux', 'HTML', 'CSS', 'JavaScript'],
     img: [
       'img/project_screen_shots/space-traveler-mobile.png',
@@ -142,9 +142,7 @@ const displayMenu = () => {
 
 const resetDefault = (event) => {
   if (
-    (event.target &&
-      event.target.parentNode.className === 'mobile-nav-container') ||
-    (event.target && event.target.className === 'mobile_menu_links')
+    (event.target && event.target.parentNode.className === 'mobile-nav-container') || (event.target && event.target.className === 'mobile_menu_links')
   ) {
     document.querySelector('.mobile-nav-container').remove();
     document.querySelector('.nav').classList.remove('dn');
@@ -171,9 +169,8 @@ const removePopup = (event) => {
   }
 };
 
-
 /* local storage */
-
+const email = document.querySelector('#email');
 const fullName = document.querySelector('#name');
 const message = document.querySelector('#message');
 const storeData = (input) => {
@@ -202,9 +199,7 @@ message.addEventListener('input', handleInput);
 const displayStoredData = () => {
   const inputsData = JSON.parse(window.localStorage.storedFormData);
   if (
-    inputsData.name.length ||
-    inputsData.email.length ||
-    inputsData.message.length
+    inputsData.name.length || inputsData.email.length || inputsData.message.length
   ) {
     const [nameValue, emailValue, messageValue] = getStoredData();
     email.value = emailValue;
@@ -261,7 +256,6 @@ window.addEventListener('load', () => {
       multiPostBtn.addEventListener('click', () => {
         const headlineLink = document.querySelector('#headline');
         headlineLink.click();
-        const projectPopup = document.querySelector('.popup-container');
         document.querySelector('body').classList.toggle('no-scroll');
         document
           .querySelector('.works')
@@ -271,10 +265,9 @@ window.addEventListener('load', () => {
 
         document.querySelector('.popup-heading').innerText = project.name;
 
-        document.querySelector('.popup-img').src = project.img[1];
+        [document.querySelector('.popup-img').src] = project.img;
 
-        document.querySelector('.popup-description').innerText =
-          project.description;
+        document.querySelector('.popup-description').innerText = project.description;
         document.querySelector('.see-live').href = project.links.live;
         document.querySelector('.see-source').href = project.links.source;
         const ul = document.querySelector('.popup-list');
@@ -282,7 +275,7 @@ window.addEventListener('load', () => {
           const li = document.createElement('li');
           li.classList.add('popup-list-item');
           li.innerText = item;
-          ul.appendChild(li);
+          return ul.appendChild(li);
         });
 
         document.querySelector('.popup').classList.toggle('dn');
@@ -291,79 +284,61 @@ window.addEventListener('load', () => {
       multiPostDescription.append(multiPostBtn);
       multiPostSection.appendChild(multiPostDescription);
       return worksContainer.appendChild(multiPostSection);
-    } else {
-      const div = document.createElement('div');
-      div.classList.add('hover-effect', 'work_card');
+    }
+    const div = document.createElement('div');
+    div.classList.add('hover-effect', 'work_card');
 
-      const seeProjectBtn = document.createElement('button');
-      seeProjectBtn.innerHTML = 'See Project';
-      seeProjectBtn.classList.add('button', 'see_project');
+    const seeProjectBtn = document.createElement('button');
+    seeProjectBtn.innerHTML = 'See Project';
+    seeProjectBtn.classList.add('button', 'see_project');
 
-      div.innerHTML = `
+    div.innerHTML = `
       <h3 class="project_heading">${project.name}</h3>
       <p class="project_description">
         ${project.description}
       </p>`;
 
-      const ul = document.createElement('ul');
-      ul.classList.add('used_technology');
+    const ul = document.createElement('ul');
+    ul.classList.add('used_technology');
 
-      project.used_technologies.map((items) => {
-        const li = document.createElement('li');
-        li.innerText = items;
-        ul.appendChild(li);
-      });
-      div.appendChild(ul);
-      const imgUrl = project.img[0];
-      div.style.backgroundImage = ` linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(20,20,20,0.6)),url(${imgUrl})`;
-
-      seeProjectBtn.addEventListener('click', () => {
-        const headlineLink = document.querySelector('#headline');
-        headlineLink.click();
-        const projectPopup = document.querySelector('.popup-container');
-        projectPopup.classList.toggle('dn');
-        document.querySelector('.popup').classList.toggle('dn');
-        document.querySelector('body').classList.toggle('no-scroll');
-        document
-          .querySelector('.works')
-          .classList.toggle('w-100-no-padding-margin');
-        document.querySelector('.headline').classList.toggle('blur-100vh');
-        document.querySelector('header').classList.toggle('blur');
-
-        document.querySelector('.popup-heading').innerText = project.name;
-
-        document.querySelector('.popup-img').src = project.img[1];
-        document.querySelector('.popup-description').innerText =
-          project.description;
-        document.querySelector('.see-live').href = project.links.live;
-        document.querySelector('.see-source').href = project.links.source;
-        const ul = document.querySelector('.popup-list');
-        project.used_technologies.map((item) => {
-          const li = document.createElement('li');
-          li.classList.add('popup-list-item');
-          li.innerText = item;
-          ul.appendChild(li);
-        });
-      });
-      div.appendChild(seeProjectBtn);
-
-      return worksContainer.appendChild(worksContainer.appendChild(div));
-    }
-  });
-});
-
-window.addEventListener('load', function () {
-  const form = document.getElementById('form');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const action =
-      'https://script.google.com/macros/s/AKfycbzYHfOkA8YzmFmqVQWb5i6Q2tND6vn8xAVXszOBmvJgKIm8zVQUKPfO4KwQDJwicqmE/exec';
-    fetch(action, {
-      method: 'POST',
-      body: data,
-    }).then(() => {
-      alert('I Received your message, Thank you for reaching out Me!');
+    project.used_technologies.map((items) => {
+      const li = document.createElement('li');
+      li.innerText = items;
+      return ul.appendChild(li);
     });
+    div.appendChild(ul);
+    const imgUrl = project.img[0];
+    div.style.backgroundImage = ` linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(20,20,20,0.6)),url(${imgUrl})`;
+
+    seeProjectBtn.addEventListener('click', () => {
+      const headlineLink = document.querySelector('#headline');
+      headlineLink.click();
+      const projectPopup = document.querySelector('.popup-container');
+      projectPopup.classList.toggle('dn');
+      document.querySelector('.popup').classList.toggle('dn');
+      document.querySelector('body').classList.toggle('no-scroll');
+      document
+        .querySelector('.works')
+        .classList.toggle('w-100-no-padding-margin');
+      document.querySelector('.headline').classList.toggle('blur-100vh');
+      document.querySelector('header').classList.toggle('blur');
+
+      document.querySelector('.popup-heading').innerText = project.name;
+
+      [document.querySelector('.popup-img').src] = project.img;
+      document.querySelector('.popup-description').innerText = project.description;
+      document.querySelector('.see-live').href = project.links.live;
+      document.querySelector('.see-source').href = project.links.source;
+      const ul = document.querySelector('.popup-list');
+      project.used_technologies.map((item) => {
+        const li = document.createElement('li');
+        li.classList.add('popup-list-item');
+        li.innerText = item;
+        return ul.appendChild(li);
+      });
+    });
+    div.appendChild(seeProjectBtn);
+
+    return worksContainer.appendChild(worksContainer.appendChild(div));
   });
 });

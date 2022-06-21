@@ -257,7 +257,6 @@
 .project_heading {
   margin-left: 16px;
   margin-right: 16px;
-
   margin-bottom: 20px;
   font-family: 'Crete Round', 'Times New Roman', Times, serif;
   font-size: 32px;
@@ -302,6 +301,7 @@
   font-size: 15px;
   line-height: 20px;
 }
+
 .see_project {
   position: absolute;
   bottom: 0;
@@ -787,7 +787,6 @@ small {
     box-sizing: border-box;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
-
     width: 89%;
     margin: 0 auto;
     margin-bottom: 130px;
@@ -853,7 +852,6 @@ small {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
     padding-bottom: 25px;
   }
 

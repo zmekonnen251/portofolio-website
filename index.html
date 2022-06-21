@@ -220,13 +220,18 @@
           to chat please get in touch.
         </h3>
 
-        <form class="contact_form" id="form">
+        <form
+          action="https://formspree.io/f/xgedowvw"
+          method="POST"
+          class="contact_form"
+          id="form"
+        >
           <input
             id="name"
             class="full_name"
             type="text"
             placeholder="Full Name"
-            name="Name"
+            name="name"
             required
             maxlength="30"
           />
@@ -235,14 +240,14 @@
             id="email"
             class="email"
             type="email"
-            name="Email"
+            name="email"
             placeholder="Email address"
             required
           />
 
           <textarea
             class="message"
-            name="Message"
+            name="message"
             id="message"
             cols="30"
             rows="10"
