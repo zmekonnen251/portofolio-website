@@ -42,7 +42,7 @@
       </ul>
     </header>
 
-    <article class="headline" id="headline_link">
+    <main class="headline" id="headline_link">
       <div class="headline-text">
         <h1 class="main-header">Hey There. I'm Zelalem</h1>
         <p class="profession">I'am a Software Developer</p>
@@ -112,14 +112,14 @@
         alt="healine illustration"
         class="illustration-header-desktop"
       />
-    </article>
+    </main>
 
     <h2 class="works_heading" id="portfolio">
       My Recent Works
       <span class="horizontal_line"></span>
     </h2>
 
-    <div class="works">
+    <section class="works">
       <div class="popup dn">
         <div class="popup-container">
           <a href="#headline_link" id="headline" class="dn">headline</a>
@@ -144,7 +144,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <section class="about_myself" id="about">
       <div class="about_me">
@@ -214,79 +214,80 @@
     </section>
 
     <footer class="footer">
-      <section class="contact_section" id="contact">
-        <h3>
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h3>
+        <div class="contact_section" id="contact">
+          <h3>
+            I'm always interested in hearing about new projects, so if you'd like
+            to chat please get in touch.
+          </h3>
 
-        <form
-          action="https://formspree.io/f/xgedowvw"
-          method="POST"
-          class="contact_form"
-          id="form"
-        >
-          <input
-            id="name"
-            class="full_name"
-            type="text"
-            placeholder="Full Name"
-            name="name"
-            required
-            maxlength="30"
-          />
+          <form
+            action="https://formspree.io/f/xgedowvw"
+            method="POST"
+            class="contact_form"
+            id="form"
+          >
+            <input
+              id="name"
+              class="full_name"
+              type="text"
+              placeholder="Full Name"
+              name="name"
+              required
+              maxlength="30"
+            />
 
-          <input
-            id="email"
-            class="email"
-            type="email"
-            name="email"
-            placeholder="Email address"
-            required
-          />
+            <input
+              id="email"
+              class="email"
+              type="email"
+              name="email"
+              placeholder="Email address"
+              required
+            />
 
-          <textarea
-            class="message"
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            maxlength="500"
-            placeholder="Enter text here"
-            required
-          ></textarea>
+            <textarea
+              class="message"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              maxlength="500"
+              placeholder="Enter text here"
+              required
+            ></textarea>
 
-          <button class="submit_button" type="submit">Get in touch</button>
-          <small class="dn"></small>
-        </form>
-      </section>
-      <div class="social-media-footer">
-        <ul class="social-media-links social-media-footer">
-          <li class="github-icon">
-            <a href="https://github.com/zmekonnen251"
-              ><img src="img/github-black.png" alt="github icon"
-            /></a>
-          </li>
-          <li class="linkedin-icon">
-            <a href="https://www.linkedin.com/in/zelalem-getachew/"
-              ><img src="img/linkedin-black.png" alt="linkedin icon"
-            /></a>
-          </li>
-          <li class="anglelist">
-            <a href=""
-              ><img src="img/angelist-black.png" alt="anglelist icon"
-            /></a>
-          </li>
-          <li class="twitter-icon">
-            <a href="https://twitter.com/mek_zela"
-              ><img src="img/twitter-black.png" alt="twitter icon"
-            /></a>
-          </li>
-          <li class="medium-icon">
-            <a href=""><img src="img/medium-black.png" alt="" /></a>
-          </li>
-        </ul>
-      </div>
+            <button class="submit_button" type="submit">Get in touch</button>
+            <small class="dn"></small>
+          </form>
+        </div>
+        
+        <div class="social-media-footer">
+          <ul class="social-media-links social-media-footer">
+            <li class="github-icon">
+              <a href="https://github.com/zmekonnen251"
+                ><img src="img/github-black.png" alt="github icon"
+              /></a>
+            </li>
+            <li class="linkedin-icon">
+              <a href="https://www.linkedin.com/in/zelalem-getachew/"
+                ><img src="img/linkedin-black.png" alt="linkedin icon"
+              /></a>
+            </li>
+            <li class="anglelist">
+              <a href=""
+                ><img src="img/angelist-black.png" alt="anglelist icon"
+              /></a>
+            </li>
+            <li class="twitter-icon">
+              <a href="https://twitter.com/mek_zela"
+                ><img src="img/twitter-black.png" alt="twitter icon"
+              /></a>
+            </li>
+            <li class="medium-icon">
+              <a href=""><img src="img/medium-black.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
     </footer>
     <script src="./script.js"></script>
   </body>
