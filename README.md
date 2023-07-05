@@ -16,31 +16,31 @@
   <img src="img/mobile-menu.png">
 </p>
 
-## Built With
+# Built With
 
 - HTML,CSS and JavaScript
 - GitHub and Figma
 
-## Live Demo
+# Live Demo
 
 [live demo link](https://zmekonnen251.github.io/portofolio-website/)
 
-## Author
+# Author
 
 - GitHub: [GitHub](https://github.com/zmekonnen251)
 - Twitter: [Twitter](https://twitter.com/mek_zela)
 - LinkedIn: [Zelalem G. Mekonnen](https://www.linkedin.com/in/zelalem-getachew/)
 
-## 🤝 Contributing
+# 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+# Show your support
 
 Give a ⭐️ if you like this project!
 
-## 📝 License
+# 📝 License
 
 This project is [MIT](./MIT.md) licensed.
